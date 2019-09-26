@@ -1,0 +1,7 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+entity alu is
+port(x,y : in std_logic_vector(31 downto 0);
+-- two input operands x and y both 32-bits
+add_sub : in std_logic; 

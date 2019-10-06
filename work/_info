@@ -8,3 +8,305 @@ z2
 !i10f 100
 cModel Technology
 dC:/Modeltech_pe_edu_10.4a/examples
+Ealu
+w1570328662
+Z0 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z1 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z2 dC:/Projects/COEN316/32-bit-CPU
+8C:/Projects/COEN316/32-bit-CPU/ALU.vhd
+FC:/Projects/COEN316/32-bit-CPU/ALU.vhd
+l0
+L4
+VH5FDaKZN>B^h2;AM]BSSH2
+!s100 iTjXLU6ob=2FYIfJcR=Ae3
+Z3 OP;C;10.4a;61
+32
+Z4 !s110 1570328664
+!i10b 1
+Z5 !s108 1570328664.000000
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Projects/COEN316/32-bit-CPU/ALU.vhd|
+!s107 C:/Projects/COEN316/32-bit-CPU/ALU.vhd|
+!i113 1
+Z6 o-work work -2002 -explicit -O0
+Z7 tExplicit 1
+Eand_2_input
+Z8 w1569530584
+R0
+R1
+R2
+Z9 8C:/Projects/COEN316/32-bit-CPU/two_input_AND.vhd
+Z10 FC:/Projects/COEN316/32-bit-CPU/two_input_AND.vhd
+l0
+L11
+VF<7:eBzJK`b>L5:lz2L8g3
+!s100 V[BP:c>KSBek]NfEA8=_Y3
+R3
+32
+R4
+!i10b 1
+R5
+Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Projects/COEN316/32-bit-CPU/two_input_AND.vhd|
+Z12 !s107 C:/Projects/COEN316/32-bit-CPU/two_input_AND.vhd|
+!i113 1
+R6
+R7
+Abehav2
+R0
+R1
+DEx4 work 11 and_2_input 0 22 F<7:eBzJK`b>L5:lz2L8g3
+l36
+L35
+VgOaRYYZ8F7AU>k1QgoS6V3
+!s100 F@6o<U:PE:g6?D5lo9>m_1
+R3
+32
+R4
+!i10b 1
+R5
+R11
+R12
+!i113 1
+R6
+R7
+Ecomplementer
+Z13 w1570327386
+Z14 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z15 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+R0
+R1
+R2
+Z16 8C:/Projects/COEN316/32-bit-CPU/complementer.vhd
+Z17 FC:/Projects/COEN316/32-bit-CPU/complementer.vhd
+l0
+L12
+Va:QV6;Q__kUGeo7gYK?T^3
+!s100 Kkao^I9:T1X>n3<0H=GLe0
+R3
+32
+Z18 !s110 1570328665
+!i10b 1
+Z19 !s108 1570328665.000000
+Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Projects/COEN316/32-bit-CPU/complementer.vhd|
+Z21 !s107 C:/Projects/COEN316/32-bit-CPU/complementer.vhd|
+!i113 1
+R6
+R7
+Abehv
+R14
+R15
+R0
+R1
+Z22 DEx4 work 12 complementer 0 22 a:QV6;Q__kUGeo7gYK?T^3
+l27
+L23
+Z23 VTWlIIQ5HLUZ3z^[Wn13_B0
+Z24 !s100 E[DL6i]:gmYY?G>lZVY4c3
+R3
+32
+R18
+!i10b 1
+R19
+R20
+R21
+!i113 1
+R6
+R7
+Emux_4_to_1
+Z25 w1569530176
+R0
+R1
+R2
+Z26 8C:/Projects/COEN316/32-bit-CPU/four_to_one_MUX.vhd
+Z27 FC:/Projects/COEN316/32-bit-CPU/four_to_one_MUX.vhd
+l0
+L16
+V=2@IM<K20BLK]HlI3P`X]2
+!s100 FS^5zkeao=kNjQaaolbdC0
+R3
+32
+R4
+!i10b 1
+R5
+Z28 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Projects/COEN316/32-bit-CPU/four_to_one_MUX.vhd|
+Z29 !s107 C:/Projects/COEN316/32-bit-CPU/four_to_one_MUX.vhd|
+!i113 1
+R6
+R7
+Abehv2
+R0
+R1
+DEx4 work 10 mux_4_to_1 0 22 =2@IM<K20BLK]HlI3P`X]2
+l46
+L45
+Vjd<UMnN8i0Gb9_olo?jW=2
+!s100 Y<m0ZaDACBo6^a3bDZKiW0
+R3
+32
+R4
+!i10b 1
+R5
+R28
+R29
+!i113 1
+R6
+R7
+Etwo_input_adder
+Z30 w1569532064
+R14
+R15
+R0
+R1
+R2
+Z31 8C:/Projects/COEN316/32-bit-CPU/two_input_adder.vhd
+Z32 FC:/Projects/COEN316/32-bit-CPU/two_input_adder.vhd
+l0
+L18
+VXIFm1?8z^o9;TJ@]RZImC2
+!s100 UiaT4bgg:JTdo1Pl6nlbN1
+R3
+32
+R4
+!i10b 1
+R5
+Z33 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Projects/COEN316/32-bit-CPU/two_input_adder.vhd|
+Z34 !s107 C:/Projects/COEN316/32-bit-CPU/two_input_adder.vhd|
+!i113 1
+R6
+R7
+Abehv
+R14
+R15
+R0
+R1
+DEx4 work 15 two_input_adder 0 22 XIFm1?8z^o9;TJ@]RZImC2
+l37
+L31
+VTPiSQO;>f]C8k8=S?n`cm2
+!s100 @8HNOXN:k:mDLZak;5kBL1
+R3
+32
+R4
+!i10b 1
+R5
+R33
+R34
+!i113 1
+R6
+R7
+Etwo_input_or
+Z35 w1569530914
+R0
+R1
+R2
+Z36 8C:/Projects/COEN316/32-bit-CPU/two_input_OR.vhd
+Z37 FC:/Projects/COEN316/32-bit-CPU/two_input_OR.vhd
+l0
+L12
+V[b_jz<W]N3ME]=FXOc^n;1
+!s100 InP?>da43Yo;gRBY5fHOz0
+R3
+32
+R4
+!i10b 1
+R5
+Z38 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Projects/COEN316/32-bit-CPU/two_input_OR.vhd|
+Z39 !s107 C:/Projects/COEN316/32-bit-CPU/two_input_OR.vhd|
+!i113 1
+R6
+R7
+Abehav2
+R0
+R1
+DEx4 work 12 two_input_or 0 22 [b_jz<W]N3ME]=FXOc^n;1
+l37
+L36
+VlBOO4bA7;AA1@:]N1PBGZ0
+!s100 HA6Pm8z0VOToo:BNYX<ZV1
+R3
+32
+R4
+!i10b 1
+R5
+R38
+R39
+!i113 1
+R6
+R7
+Etwo_input_xnor
+Z40 w1569531369
+R0
+R1
+R2
+Z41 8C:/Projects/COEN316/32-bit-CPU/two_input_XNOR.vhd
+Z42 FC:/Projects/COEN316/32-bit-CPU/two_input_XNOR.vhd
+l0
+L10
+VN^<jEgg_;i<aO2k8k=[<l3
+!s100 TA=C8<9C:LY66_>2oUYb82
+R3
+32
+R4
+!i10b 1
+R5
+Z43 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Projects/COEN316/32-bit-CPU/two_input_XNOR.vhd|
+Z44 !s107 C:/Projects/COEN316/32-bit-CPU/two_input_XNOR.vhd|
+!i113 1
+R6
+R7
+Abehv2
+R0
+R1
+DEx4 work 14 two_input_xnor 0 22 N^<jEgg_;i<aO2k8k=[<l3
+l20
+L19
+VJ[fN4DfKllW3omhAWhzTV3
+!s100 SgZ:EJhJiV3E`9TI6G8UQ3
+R3
+32
+R4
+!i10b 1
+R5
+R43
+R44
+!i113 1
+R6
+R7
+Etwo_input_xor
+Z45 w1569531282
+R0
+R1
+R2
+Z46 8C:/Projects/COEN316/32-bit-CPU/two_input_XOR.vhd
+Z47 FC:/Projects/COEN316/32-bit-CPU/two_input_XOR.vhd
+l0
+L12
+V7fUfZbS_CM;0QK5Q`mWoQ1
+!s100 QH=3YINCZA>HNNc<[]iBM3
+R3
+32
+R4
+!i10b 1
+R5
+Z48 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Projects/COEN316/32-bit-CPU/two_input_XOR.vhd|
+Z49 !s107 C:/Projects/COEN316/32-bit-CPU/two_input_XOR.vhd|
+!i113 1
+R6
+R7
+Abehv2
+R0
+R1
+DEx4 work 13 two_input_xor 0 22 7fUfZbS_CM;0QK5Q`mWoQ1
+l37
+L36
+VG9VWU]c8lHS9SO`AS8>9P0
+!s100 @jIL[4d3=6`RX;fEYSTNd1
+R3
+32
+R4
+!i10b 1
+R5
+R48
+R49
+!i113 1
+R6
+R7

@@ -1,1 +1,70 @@
+C:/Projects/COEN316/32-bit-CPU/two_input_adder.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Projects/COEN316/32-bit-CPU/two_input_adder.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity two_input_adder
+-- Compiling architecture behv of two_input_adder
 
+} {} {}} C:/Projects/COEN316/32-bit-CPU/four_to_one_MUX.vhd {2 {vcom -work work -2002 -explicit -stats=none C:/Projects/COEN316/32-bit-CPU/four_to_one_MUX.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Mux_4_to_1
+-- Compiling architecture behv2 of Mux_4_to_1
+** Warning: C:/Projects/COEN316/32-bit-CPU/four_to_one_MUX.vhd(53): (vcom-1272) Length of expected is 32; length of actual is 3.
+
+
+} {} {}} C:/Projects/COEN316/32-bit-CPU/two_input_XOR.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Projects/COEN316/32-bit-CPU/two_input_XOR.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity two_input_XOR
+-- Compiling architecture behv2 of two_input_XOR
+
+} {} {}} C:/Projects/COEN316/32-bit-CPU/two_input_OR.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Projects/COEN316/32-bit-CPU/two_input_OR.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity two_input_OR
+-- Compiling architecture behav2 of two_input_OR
+
+} {} {}} C:/Projects/COEN316/32-bit-CPU/ALU.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Projects/COEN316/32-bit-CPU/ALU.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity alu
+
+} {} {}} C:/Projects/COEN316/32-bit-CPU/complementer.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Projects/COEN316/32-bit-CPU/complementer.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity complementer
+-- Compiling architecture behv of complementer
+
+} {} {}} C:/Projects/COEN316/32-bit-CPU/two_input_XNOR.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Projects/COEN316/32-bit-CPU/two_input_XNOR.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity two_input_XNOR
+-- Compiling architecture behv2 of two_input_XNOR
+
+} {} {}} C:/Projects/COEN316/32-bit-CPU/two_input_AND.vhd {1 {vcom -work work -2002 -explicit -stats=none C:/Projects/COEN316/32-bit-CPU/two_input_AND.vhd
+Model Technology ModelSim PE Student Edition vcom 10.4a Compiler 2015.03 Apr  7 2015
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity AND_2_Input
+-- Compiling architecture behav2 of AND_2_Input
+
+} {} {}}

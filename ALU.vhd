@@ -4,7 +4,9 @@ use IEEE.std_logic_1164.all;
 entity alu is
 
 -- two input operands x and y both 32-bits
-port(x,y : in std_logic_vector(31 downto 0);	
+port(
+
+x,y : in std_logic_vector(31 downto 0);	
 
 -- 0 = add, 1 = sub
 add_sub : in std_logic; 		
@@ -17,7 +19,8 @@ func : in std_logic_vector(1 downto 0);
 
 output : out std_logic_vector(31 downto 0);
 overflow: out std_logic;
-zero : out std_logic;
+zero : out std_logic
+);
 
 end alu;
 

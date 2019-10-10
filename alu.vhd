@@ -1,5 +1,7 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
 
 entity alu is
 
@@ -24,15 +26,89 @@ zero : out std_logic
 
 end alu;
 
+architecture alu_architecture of alu is 
 
---create an arithmatic unit
+-- signal declarations
+signal arithmatic_out : std_logic_vector(x'length-1 downto x'right);
+signal logic_out : std_logic_vector(x'length-1 downto x'right);
+
+
+begin
+
+  -- create an arithmatic unit  
+  arithmatic_unit: process(add_sub, x, y)
+    
+    variable var_arithmatic_out : std_logic_vector(x'length-1 downto x'right);
+    
+  begin
+  
+  case add_sub is  
+    when '0' => var_arithmatic_out := (x + y);
+    when '1' => var_arithmatic_out := (x - y);
+    when others => var_arithmatic_out := "UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU";
+  end case; 
+  
+  arithmatic_out <= var_arithmatic_out;
+  end process;
+  
+  
+  -- create a logic unit
+  logic_unit: process(logic_func, x, y)
+    
+    variable var_logic_out : std_logic_vector(x'length-1 downto x'right);
+    
+  begin
+  
+  case logic_func is  
+    when "00" => var_logic_out := (x and y);
+    when "01" => var_logic_out := (x or y);
+    when "10" => var_logic_out := (x xor y);
+    when "11" => var_logic_out := (x nor y);
+    when others => var_logic_out := "UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU";
+  end case; 
+  
+  logic_out <= var_logic_out;
+  end process;
+  
+  
+  -- create a Mux 4-1
+  output_mux: process(func, arithmatic_out, logic_out, y)
+     
+     variable var_output : std_logic_vector(x'length-1 downto x'right);
+     variable var_arithmatic_out : std_logic_vector(x'length-1 downto x'right) := arithmatic_out;
+     
+   begin
+   
+   -- https://stackoverflow.com/questions/52031300/how-to-assign-one-bit-of-std-logic-vector-to-1-and-others-to-0
+   if(var_arithmatic_out(x'length-1) = '1') then 
+        -- x < y is true
+        var_arithmatic_out := (others => '0');
+        var_arithmatic_out(x'right) := '1';
+    else
+        -- x < y is false
+        var_arithmatic_out := (others => '0');
+    end if;
+   
+   case func is  
+     when "00" => var_output := y;
+     when "01" => var_output := (x or y);
+     when "10" => var_output := var_arithmatic_out;
+     when "11" => var_output := logic_out;
+     when others => var_output := "UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU";
+   end case; 
+   
+   output <= var_output;
+   end process;
+   
+  
+  -- create a zero detector
+  
+  -- create an overflow detector
+
+  
+end alu_architecture;
 
 
 
---create a logic unit
 
---create a Mux 4-1 - done
 
---create a zero detector
-
--- create an overflow detector

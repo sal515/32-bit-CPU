@@ -15,44 +15,68 @@ force x 16#00000000
 force y 16#FFFFFFFF
 run 1
 force add_sub 0
-run 4
+run 2
 force logic_func 00
-run 4
+run 2
 force logic_func 01
-run 4
+run 2
 force logic_func 10
-run 4
+run 2
 force logic_func 11
-run 4
+run 2
 force logic_func UU
-run 4
+run 2
+
+force func 00
+run 2
+force func 01
+run 2
+force func 10
+run 2
+force func 11
+run 2
+force func UU
+run 2
+
+
 
 force x 16#FFFFFFFF
 force y 16#FFFFFFFF
-run 4
+run 2
 force add_sub 0
-run 4
+run 2
 force logic_func 00
-run 4
+run 2
 force logic_func 01
-run 4
+run 2
 force logic_func 10
-run 4
+run 2
 force logic_func 11
-run 4
+run 2
 force logic_func UU
-run 4
+run 2
+
+force func 00
+run 2
+force func 01
+run 2
+force func 10
+run 2
+force func 11
+run 2
+force func UU
+run 2
 
 
 force x 16#00000000
 force y 16#FFFFFFFF
 force add_sub 1
-run 4
+run 2
 
 force x 16#00000000
 force y 16#FFFFFFFF
 force add_sub U
-run 4
+run 2
 
 
 

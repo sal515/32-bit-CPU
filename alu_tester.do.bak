@@ -13,46 +13,46 @@ add wave *
 #force clk 0 0, 1 10 -r 20
 force x 16#00000000
 force y 16#FFFFFFFF
-run 5
+run 1
 force add_sub 0
-run 5
+run 4
 force logic_func 00
-run 5
+run 4
 force logic_func 01
-run 5
+run 4
 force logic_func 10
-run 5
+run 4
 force logic_func 11
-run 5
+run 4
 force logic_func UU
-run 5
+run 4
 
 force x 16#FFFFFFFF
 force y 16#FFFFFFFF
-run 5
+run 4
 force add_sub 0
-run 5
+run 4
 force logic_func 00
-run 5
+run 4
 force logic_func 01
-run 5
+run 4
 force logic_func 10
-run 5
+run 4
 force logic_func 11
-run 5
+run 4
 force logic_func UU
-run 5
+run 4
 
 
 force x 16#00000000
 force y 16#FFFFFFFF
 force add_sub 1
-run 5
+run 4
 
 force x 16#00000000
 force y 16#FFFFFFFF
 force add_sub U
-run 5
+run 4
 
 
 

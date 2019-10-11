@@ -32,6 +32,7 @@ architecture alu_architecture of alu is
 signal arithmatic_out : std_logic_vector(x'length-1 downto x'right);
 signal logic_out : std_logic_vector(x'length-1 downto x'right);
 
+signal ifHit : std_logic;
 
 begin
 
@@ -46,6 +47,7 @@ begin
     when '0' => var_arithmatic_out := (x + y);
     when '1' => var_arithmatic_out := (x - y);
     when others => var_arithmatic_out := "UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU";
+    -- when others => var_arithmatic_out := x"UUUUUUUU";
   end case; 
   
   arithmatic_out <= var_arithmatic_out;
@@ -80,19 +82,24 @@ begin
    begin
    
    -- https://stackoverflow.com/questions/52031300/how-to-assign-one-bit-of-std-logic-vector-to-1-and-others-to-0
-   if(var_arithmatic_out(x'length-1) == 1) then 
+   if(arithmatic_out(x'length-1) = '1') then 
+        
         -- x < y is true
+        ifHit <= '1';
+        
         var_arithmatic_out := (others => '0');
         var_arithmatic_out(x'right) := '1';
     else
         -- x < y is false
+        ifHit <= '0';
+        
         var_arithmatic_out := (others => '0');
     end if;
    
    case func is  
      when "00" => var_output := y;
-     when "01" => var_output := (x or y);
-     when "10" => var_output := var_arithmatic_out;
+     when "01" => var_output := var_arithmatic_out;
+     when "10" => var_output := arithmatic_out;
      when "11" => var_output := logic_out;
      when others => var_output := "UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU";
    end case; 
@@ -102,8 +109,29 @@ begin
    
   
   -- create a zero detector
-  
+  zero_detector: process(arithmatic_out)
+     
+     -- variable var_zero : std_logic;
+     -- variable var_arithmatic_out : std_logic_vector(x'length-1 downto x'right) := arithmatic_out;
+     
+   begin
+    -- or var_arithmatic_out = '0';
+      
+   zero <= var_zero;
+   end process;
+   
+   
   -- create an overflow detector
+--  overflow_detector: process(arithmatic_out, add_sub, x, y)
+     
+--     variable var_zero : std_logic;
+     -- variable var_arithmatic_out : std_logic_vector(x'length-1 downto x'right) := arithmatic_out;
+     
+   -- begin
+     -- or var_arithmatic_out = '0';
+      
+   -- output <= var_output;
+   -- end process;
 
   
 end alu_architecture;

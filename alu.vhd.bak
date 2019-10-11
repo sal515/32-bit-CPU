@@ -1,7 +1,8 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
 use ieee.std_logic_arith.all;
-use ieee.std_logic_unsigned.all;
+use ieee.std_logic_signed.all;
+-- use ieee.std_logic_unsigned.all;
 
 entity alu is
 
@@ -83,16 +84,11 @@ begin
    
    -- https://stackoverflow.com/questions/52031300/how-to-assign-one-bit-of-std-logic-vector-to-1-and-others-to-0
    if(arithmatic_out(x'length-1) = '1') then 
-        
-        -- x < y is true
-        ifHit <= '1';
-        
+        -- x < y is true   
         var_arithmatic_out := (others => '0');
         var_arithmatic_out(x'right) := '1';
     else
         -- x < y is false
-        ifHit <= '0';
-        
         var_arithmatic_out := (others => '0');
     end if;
    
@@ -111,28 +107,52 @@ begin
   -- create a zero detector
   zero_detector: process(arithmatic_out)
      
-     -- variable var_zero : std_logic;
      -- variable var_arithmatic_out : std_logic_vector(x'length-1 downto x'right) := arithmatic_out;
+     variable var_zero : std_logic;
      
    begin
-    -- or var_arithmatic_out = '0';
+     
+     -- assuming the result is all zeros
+     var_zero := '1';
+     
+     -- checking if the result is actually zeros
+    for i in 0 to x'length-1 loop
+      if(arithmatic_out(i)) = '1' then
+        var_zero := '0';
+        exit;
+      end if;
+    end loop;
+    
+     zero <= var_zero;
+     
+     -- or var_arithmatic_out = '0';
+      -- if(var_arithmatic_out = zero_vector) then
+        -- zero <= '1';
+      -- else
+        -- zero <= '0';
+      -- end if;
       
-   zero <= var_zero;
    end process;
    
    
   -- create an overflow detector
---  overflow_detector: process(arithmatic_out, add_sub, x, y)
+  overflow_detector: process(arithmatic_out, add_sub, x, y)
+     variable var_overflow : std_logic;
      
---     variable var_zero : std_logic;
-     -- variable var_arithmatic_out : std_logic_vector(x'length-1 downto x'right) := arithmatic_out;
-     
-   -- begin
+    begin
      -- or var_arithmatic_out = '0';
-      
-   -- output <= var_output;
-   -- end process;
-
+     
+      if(add_sub = '0') then
+        -- add 
+        
+      else
+        -- sub
+        
+      end if;
+     
+      overflow <= var_overflow;
+    
+    end process;
   
 end alu_architecture;
 

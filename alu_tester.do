@@ -11,6 +11,12 @@ add wave *
 #add wave arithmatic_out
 
 #force clk 0 0, 1 10 -r 20
+
+force x 16#00000000
+force y 16#00000000
+force add_sub 0
+run 2
+
 force x 16#00000000
 force y 16#FFFFFFFF
 run 1
@@ -24,8 +30,8 @@ force logic_func 10
 run 2
 force logic_func 11
 run 2
-force logic_func UU
-run 2
+#force logic_func UU
+#run 2
 
 force func 00
 run 2

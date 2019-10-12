@@ -1,13 +1,14 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
-use ieee.std_logic_arith.all;
-use ieee.std_logic_signed.all;
+-- use ieee.std_logic_arith.all;
+-- use signed for the implementation of the overflow
+use ieee.std_logic_signed.all; 
 -- use ieee.std_logic_unsigned.all;
+-- use ieee.numeric_std.all;
 
 entity alu is
 
 port(
-  
 -- two input operands x and y both 32-bits  
 x,y : in std_logic_vector(31 downto 0);	
 
@@ -33,7 +34,6 @@ architecture alu_architecture of alu is
 signal arithmatic_out : std_logic_vector(x'length-1 downto x'right);
 signal logic_out : std_logic_vector(x'length-1 downto x'right);
 
-signal ifHit : std_logic;
 
 begin
 
@@ -47,7 +47,7 @@ begin
   case add_sub is  
     when '0' => var_arithmatic_out := (x + y);
     when '1' => var_arithmatic_out := (x - y);
-    when others => var_arithmatic_out := "UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU";
+    when others => var_arithmatic_out := (others => 'U');
     -- when others => var_arithmatic_out := x"UUUUUUUU";
   end case; 
   
@@ -67,43 +67,12 @@ begin
     when "01" => var_logic_out := (x or y);
     when "10" => var_logic_out := (x xor y);
     when "11" => var_logic_out := (x nor y);
-    when others => var_logic_out := "UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU";
+    when others => var_logic_out := (others => 'U');
   end case; 
   
   logic_out <= var_logic_out;
   end process;
-  
-  
-  -- create a Mux 4-1
-  output_mux: process(func, arithmatic_out, logic_out, y)
-     
-     variable var_output : std_logic_vector(x'length-1 downto x'right);
-     variable var_arithmatic_out : std_logic_vector(x'length-1 downto x'right) := arithmatic_out;
-     
-   begin
-   
-   -- https://stackoverflow.com/questions/52031300/how-to-assign-one-bit-of-std-logic-vector-to-1-and-others-to-0
-   if(arithmatic_out(x'length-1) = '1') then 
-        -- x < y is true   
-        var_arithmatic_out := (others => '0');
-        var_arithmatic_out(x'right) := '1';
-    else
-        -- x < y is false
-        var_arithmatic_out := (others => '0');
-    end if;
-   
-   case func is  
-     when "00" => var_output := y;
-     when "01" => var_output := var_arithmatic_out;
-     when "10" => var_output := arithmatic_out;
-     when "11" => var_output := logic_out;
-     when others => var_output := "UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU";
-   end case; 
-   
-   output <= var_output;
-   end process;
-   
-  
+    
   -- create a zero detector
   zero_detector: process(arithmatic_out)
   
@@ -132,19 +101,61 @@ begin
      variable var_overflow : std_logic;
      
     begin
-     -- or var_arithmatic_out = '0';
      
-      if(add_sub = '0') then
-        -- add 
+    
+      if((add_sub = '0') and (x(x'length-1) = '0') and (y(y'length-1) = '0') and (arithmatic_out(x'length-1) = '1')) then
+        -- add positive numbers overflow
+        var_overflow := '1';
+
+      elsif(add_sub = '0' and x(x'length-1) = '1' and y(y'length-1) = '1' and arithmatic_out(x'length-1) = '0') then
+        -- add negative numbers overflow
+        var_overflow := '1';
+      
+      elsif(add_sub = '1' and x(x'length-1) = '0' and y(y'length-1) = '1' and arithmatic_out(x'length-1) = '1') then
+        -- sub positive from negative numbers overflow
+        var_overflow := '1';
+      
+      elsif(add_sub = '1' and x(x'length-1) = '1' and y(y'length-1) = '0' and arithmatic_out(x'length-1) = '0') then
+        -- sub negative from positive numbers overflow
+        var_overflow := '1';
         
       else
-        -- sub
-        
+        var_overflow:= '0';      
+          
       end if;
      
       overflow <= var_overflow;
     
     end process;
+    
+  -- create a Mux 4-1
+  output_mux: process(func, arithmatic_out, logic_out, y)
+     
+     variable var_output : std_logic_vector(x'length-1 downto x'right);
+     variable var_arithmatic_out : std_logic_vector(x'length-1 downto x'right) := arithmatic_out;
+     
+   begin
+   
+   -- https://stackoverflow.com/questions/52031300/how-to-assign-one-bit-of-std-logic-vector-to-1-and-others-to-0
+   if(arithmatic_out(x'length-1) = '1') then 
+        -- x < y is true   
+        var_arithmatic_out := (others => '0');
+        var_arithmatic_out(x'right) := '1';
+    else
+        -- x < y is false
+        var_arithmatic_out := (others => '0');
+    end if;
+   
+   case func is  
+     when "00" => var_output := y;
+     when "01" => var_output := var_arithmatic_out;
+     when "10" => var_output := arithmatic_out;
+     when "11" => var_output := logic_out;
+     when others => var_output := (others => 'U');
+   end case; 
+   
+   output <= var_output;
+   end process;
   
 end alu_architecture;
 

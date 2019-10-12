@@ -165,7 +165,7 @@ run 2
 
 #overflow test
 
-force logic_func 10
+force func 10
 
 
 force x 16#7FFFFFFF

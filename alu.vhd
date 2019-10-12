@@ -132,7 +132,7 @@ begin
   output_mux: process(func, arithmatic_out, logic_out, y)
      
      variable var_output : std_logic_vector(x'length-1 downto x'right);
-     variable var_arithmatic_out : std_logic_vector(x'length-1 downto x'right) := arithmatic_out;
+     variable var_arithmatic_out : std_logic_vector(x'length-1 downto x'right);
      
    begin
    

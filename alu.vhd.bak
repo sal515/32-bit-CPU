@@ -34,7 +34,6 @@ architecture alu_architecture of alu is
 signal arithmatic_out : std_logic_vector(x'length-1 downto x'right);
 signal logic_out : std_logic_vector(x'length-1 downto x'right);
 
-signal ifHit : std_logic;
 
 begin
 

@@ -7,11 +7,12 @@ Run modelsim:
 Source RTL:
 source /CMC/ENVIRONMENT/fpga_advantage.env
 Run RTL:
-source /CMC/ENVIRONMENT/fpga_advantage.env
+precision &
 ----------------------------------------
 Source ISE generator:
-
+source /CMC/ENVIRONMENT/xilinx.env
 Run ISE Generator:
+ise &
 
 ----------------------------------------
 32-bit-CPU

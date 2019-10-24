@@ -26,16 +26,11 @@ architecture register_file_arch of regfile is
 
 begin
 
-    read: process(read_a, read_b)
-        variable a : integer; 
-        variable b : integer;     
+    read: process(read_a, read_b, reg_arr)
     begin
-            -- converting std vector to integer - to find the appropriate register to access 
-            a := CONV_INTEGER(read_a);
-            b := CONV_INTEGER(read_b);
-            
-            out_a <= reg_arr(a);
-            out_b <= reg_arr(b); 
+            -- converting std vector to integer - to find the appropriate register to access           
+            out_a <= reg_arr(CONV_INTEGER(read_a));
+            out_b <= reg_arr(CONV_INTEGER(read_b)); 
     end process;
 
     reg_file_update: process(clk, reset)

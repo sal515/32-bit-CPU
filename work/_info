@@ -42,7 +42,7 @@ R9
 R10
 !s100 ZnW2zfCABPg:LPS3GEg@]3
 Eregfile
-Z13 w1571891749
+Z13 w1571895410
 R3
 Z14 DPx4 ieee 18 std_logic_unsigned 0 22 hEMVMlaNCR^<OOoVNV;m90
 R5
@@ -52,24 +52,24 @@ Z16 F/nfs/home/s/sal_rahm/316/32-bit-CPU/32-bit-register.vhd
 l0
 L7
 VYUh7Z]fh]ON1?gK@XgaDj3
-!s100 WL^gNkh[6;anmO_R_1gYB3
 R9
 32
 Z17 o-work work
 R10
+!s100 WL^gNkh[6;anmO_R_1gYB3
 Aregister_file_arch
 R3
 R14
 R5
 DEx4 work 7 regfile 0 22 YUh7Z]fh]ON1?gK@XgaDj3
-l27
-L22
-VIY5]6E_cMRZdY1HKTHW<g2
-!s100 3c=4eihlKB0ONl3=Kl4jJ2
-R9
 32
 R11
 Mx2 4 ieee 18 std_logic_unsigned
 R12
+l27
+L22
+VKc>5kk<0l1jJdI77gdAbk0
+R9
 R17
 R10
+!s100 ^Qnm_OnWP@ColP205<SAS3

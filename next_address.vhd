@@ -19,6 +19,10 @@ architecture next_address_arch of next_address is
     signal on_branch_sign_ext: std_logic_vector(next_pc'length-1 downto next_pc'right);
     begin
 
+        on_branch_sign_ext(target_address'length-1-(5+5) downto target_address'right) <= target_address(target_address'length-1-(5+5) downto target_address'right);
+        on_branch_sign_ext(next_pc'length-1 downto target_address'length-(5+5)) <= target_address(target_address'length-1-(5+5));
+
+
         branch_select: process(on_branch_sign_ext, rs, rt, branch_type)
         begin
             case branch_type is
@@ -57,61 +61,5 @@ architecture next_address_arch of next_address is
             end case;
         end process;
 
-
-
-
-
 end next_address_arch;
-
-
-
-
-
-
--- entity regfile is
--- port( 
---     din : in std_logic_vector(31 downto 0);
---     reset : in std_logic;
---     clk : in std_logic;
---     write : in std_logic;
---     read_a : in std_logic_vector(4 downto 0);
---     read_b : in std_logic_vector(4 downto 0);
---     write_address : in std_logic_vector(4 downto 0);
---     out_a : out std_logic_vector(31 downto 0);
---     out_b : out std_logic_vector(31 downto 0)
---     );
--- end regfile ;
-
-
--- architecture register_file_arch of regfile is
---     -- 32 registers in a register file, thus 0 to 31 in reg_arr
---     type register_array is array(0 to 31) of std_logic_vector(din'length-1 downto din'right);
---     signal reg_arr : register_array;
-
--- begin
-
---     read: process(read_a, read_b, reg_arr)
---     begin
---             -- converting std vector to integer - to find the appropriate register to access           
---             out_a <= reg_arr(CONV_INTEGER(read_a));
---             out_b <= reg_arr(CONV_INTEGER(read_b)); 
---     end process;
-
---     reg_file_update: process(clk, reset)
---     begin
-        
---         if(reset = '1') then
---             reg_arr <= (others => (others => '0'));
-        
---         elsif(clk'event and clk = '1' and write = '1') then
---             reg_arr(CONV_INTEGER(write_address)) <= din;
---         end if;
-        
---     end process;
-
-
-
-    
-
--- end register_file_arch ; 
 

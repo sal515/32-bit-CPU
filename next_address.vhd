@@ -19,8 +19,8 @@ architecture next_address_arch of next_address is
     signal on_branch_sign_ext: std_logic_vector(next_pc'length-1 downto next_pc'right);
     begin
 
-        on_branch_sign_ext(target_address'length-1-(5+5) downto target_address'right) <= target_address(target_address'length-1-(5+5) downto target_address'right);
-        on_branch_sign_ext(next_pc'length-1 downto target_address'length-(5+5)) <= (others => target_address(target_address'length-1-(5+5)));
+        on_branch_sign_ext((target_address'length-1)-(5+5) downto target_address'right) <= target_address((target_address'length-1)-(5+5) downto target_address'right);
+        on_branch_sign_ext(next_pc'length-1 downto target_address'length-(5+5)) <= (others => target_address((target_address'length-1)-(5+5)));
 
 
         branch_select: process(on_branch_sign_ext, rs, rt, branch_type)

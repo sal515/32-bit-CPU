@@ -13,13 +13,15 @@ run 1
 
 # jump = 01, target address 5
 force pc_sel 01
-force target_address 16#00000005
+force target_address 16#000005
 run 1
 
 # jump = 10, rs = x0A
 force pc_sel 10
 force rs 16#0000000A
 run 1
+
+force target_address 16#000005
 
 # test branch = true
 force pc_sel 00

@@ -27,7 +27,7 @@ architecture next_address_arch of next_address is
         begin
             case branch_type is
                 when "00" =>
-                    branch_out <= (others=>'0')
+                    branch_out <= (others=>'0');
                 when "01" =>
                     if(rs = rt) then
                         branch_out <= on_branch_sign_ext;         
@@ -41,7 +41,7 @@ architecture next_address_arch of next_address is
                         branch_out <= on_branch_sign_ext;
                     end if;
                 when others =>
-                    branch_out <= (others=>'U')
+                    branch_out <= (others=>'U');
             end case;
         end process;
 

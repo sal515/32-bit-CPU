@@ -25,6 +25,7 @@ architecture next_address_arch of next_address is
 
         branch_select: process(on_branch_sign_ext, rs, rt, branch_type)
         begin
+            branch_out <= (others=>'0');
             case branch_type is
                 when "00" =>
                     branch_out <= (others=>'0');

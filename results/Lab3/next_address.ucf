@@ -1,0 +1,11 @@
+# Precision RTL Synthesis  64-bit 2016.1.0.15 (Production Release) Wed Jun  8 09:35:56 PDT 2016
+
+CONFIG STEPPING="0";
+NET next_pc(0) LOC = T6; 
+NET next_pc(1) LOC = V1; 
+NET next_pc(2) LOC = R3;
+NET next_pc(3) LOC = R5;
+NET next_pc(4) LOC = T2; 
+NET next_pc(5) LOC = P4;
+NET next_pc(6) LOC = R7; 
+NET next_pc(7) LOC = P2;

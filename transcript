@@ -1,4 +1,4 @@
-# //  ModelSim SE-64 6.6g May 23 2012 Linux 3.10.0-1062.1.2.el7.x86_64
+# //  ModelSim SE-64 6.6g May 23 2012 Linux 3.10.0-1062.4.1.el7.x86_64
 # //
 # //  Copyright 1991-2012 Mentor Graphics Corporation
 # //              All Rights Reserved.
@@ -10,3 +10,24 @@
 # //
 # 
 #  
+vcom -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/next_address.vhd
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_signed
+# -- Compiling entity next_address
+# -- Compiling architecture next_address_arch of next_address
+vsim -novopt -do ./next_address_tester.do next_address
+# vsim -do ./next_address_tester.do -novopt next_address 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Refreshing /nfs/home/s/sal_rahm/316/32-bit-CPU/work.next_address(next_address_arch)
+# Loading work.next_address(next_address_arch)
+# do ./next_address_tester.do 
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 1  Instance: /next_address
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 1  Instance: /next_address

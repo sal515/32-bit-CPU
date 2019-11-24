@@ -1,4 +1,4 @@
-# //  ModelSim SE-64 6.6g May 23 2012 Linux 3.10.0-1062.4.1.el7.x86_64
+# //  ModelSim SE-64 6.6g May 23 2012 Linux 3.10.0-1062.4.3.el7.x86_64
 # //
 # //  Copyright 1991-2012 Mentor Graphics Corporation
 # //              All Rights Reserved.
@@ -10,6 +10,14 @@
 # //
 # 
 #  
+vcom /nfs/home/s/sal_rahm/316/32-bit-CPU/alu.vhd
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_signed
+# -- Compiling entity alu
+# -- Compiling architecture alu_architecture of alu
 vcom -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/next_address.vhd
 # Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
 # -- Loading package standard
@@ -18,16 +26,267 @@ vcom -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/next_address.vhd
 # -- Loading package std_logic_signed
 # -- Compiling entity next_address
 # -- Compiling architecture next_address_arch of next_address
-vsim -novopt -do ./next_address_tester.do next_address
-# vsim -do ./next_address_tester.do -novopt next_address 
+vcom -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/32-bit-register.vhd
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity regfile
+# -- Compiling architecture register_file_arch of regfile
+vcom alu.vhd
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_signed
+# -- Compiling entity alu
+# -- Compiling architecture alu_architecture of alu
+vcom next_address.vhd
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_signed
+# -- Compiling entity next_address
+# -- Compiling architecture next_address_arch of next_address
+vcom regfile
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# ** Error: (vcom-7) Failed to open design unit file "regfile" in read mode.
+# No such file or directory. (errno = ENOENT)
+# /nfs/sw_cmc/x86_64.EL7/tools/mentor.2011/modelsim_6.6g/modeltech/linux_x86_64/vcom failed.
+vcom 32-bit-register.vhd
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity regfile
+# -- Compiling architecture register_file_arch of regfile
+vcom d_cache.vhdl
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity d_cache
+# -- Compiling architecture d_cache_arch of d_cache
+# ** Error: d_cache.vhdl(23): (vcom-1136) Unknown identifier "din".
+# ** Error: d_cache.vhdl(23): Expression is not a signal.
+# ** Error: d_cache.vhdl(63): VHDL Compiler exiting
+# /nfs/sw_cmc/x86_64.EL7/tools/mentor.2011/modelsim_6.6g/modeltech/linux_x86_64/vcom failed.
+vcom d_cache.vhdl
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity d_cache
+# -- Compiling architecture d_cache_arch of d_cache
+vcom d_cache.vhdl
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity d_cache
+# -- Compiling architecture d_cache_arch of d_cache
+vcom i_cache.vhdl
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity i_cache
+# -- Compiling architecture i_cache_arch of i_cache
+# ** Error: i_cache.vhdl(22): Illegal concurrent statement.
+# ** Error: i_cache.vhdl(28): Illegal target for signal assignment.
+# ** Error: i_cache.vhdl(28): (vcom-1136) Unknown identifier "ic_out".
+# ** Error: i_cache.vhdl(31): Illegal target for signal assignment.
+# ** Error: i_cache.vhdl(31): (vcom-1136) Unknown identifier "ic_out".
+# ** Error: i_cache.vhdl(34): Illegal target for signal assignment.
+# ** Error: i_cache.vhdl(34): (vcom-1136) Unknown identifier "ic_out".
+# ** Error: i_cache.vhdl(37): Illegal target for signal assignment.
+# ** Error: i_cache.vhdl(37): (vcom-1136) Unknown identifier "ic_out".
+# ** Error: i_cache.vhdl(40): VHDL Compiler exiting
+# /nfs/sw_cmc/x86_64.EL7/tools/mentor.2011/modelsim_6.6g/modeltech/linux_x86_64/vcom failed.
+vcom i_cache.vhdl
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity i_cache
+# -- Compiling architecture i_cache_arch of i_cache
+# ** Error: i_cache.vhdl(22): Illegal concurrent statement.
+# ** Error: i_cache.vhdl(28): Illegal target for signal assignment.
+# ** Error: i_cache.vhdl(28): (vcom-1136) Unknown identifier "ic_out".
+# ** Error: i_cache.vhdl(31): Illegal target for signal assignment.
+# ** Error: i_cache.vhdl(31): (vcom-1136) Unknown identifier "ic_out".
+# ** Error: i_cache.vhdl(34): Illegal target for signal assignment.
+# ** Error: i_cache.vhdl(34): (vcom-1136) Unknown identifier "ic_out".
+# ** Error: i_cache.vhdl(37): Illegal target for signal assignment.
+# ** Error: i_cache.vhdl(37): (vcom-1136) Unknown identifier "ic_out".
+# ** Error: i_cache.vhdl(40): VHDL Compiler exiting
+# /nfs/sw_cmc/x86_64.EL7/tools/mentor.2011/modelsim_6.6g/modeltech/linux_x86_64/vcom failed.
+vcom i_cache.vhdl
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity i_cache
+# -- Compiling architecture i_cache_arch of i_cache
+vcom i_cache.vhdl
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity i_cache
+# -- Compiling architecture i_cache_arch of i_cache
+vcom i_cache.vhdl
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity i_cache
+# -- Compiling architecture i_cache_arch of i_cache
+vcom mux.vhdl
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity two_input_mux
+# ** Error: mux.vhdl(11): near ")": expecting "IDENTIFIER"
+# /nfs/sw_cmc/x86_64.EL7/tools/mentor.2011/modelsim_6.6g/modeltech/linux_x86_64/vcom failed.
+vcom mux.vhdl
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity two_input_mux
+# -- Compiling architecture two_input_mux_arch of two_input_mux
+# ** Error: mux.vhdl(18): Illegal concurrent statement.
+# ** Error: mux.vhdl(19): String literal found where non-array type ieee.std_logic_1164.std_ulogic was expected.
+# ** Error: mux.vhdl(21): String literal found where non-array type ieee.std_logic_1164.std_ulogic was expected.
+# ** Error: mux.vhdl(27): VHDL Compiler exiting
+# /nfs/sw_cmc/x86_64.EL7/tools/mentor.2011/modelsim_6.6g/modeltech/linux_x86_64/vcom failed.
+vcom mux.vhdl
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity two_input_mux
+# -- Compiling architecture two_input_mux_arch of two_input_mux
+# ** Error: mux.vhdl(22): String literal found where non-array type ieee.std_logic_1164.std_ulogic was expected.
+# ** Error: mux.vhdl(24): String literal found where non-array type ieee.std_logic_1164.std_ulogic was expected.
+# ** Error: mux.vhdl(31): VHDL Compiler exiting
+# /nfs/sw_cmc/x86_64.EL7/tools/mentor.2011/modelsim_6.6g/modeltech/linux_x86_64/vcom failed.
+vcom mux.vhdl
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity two_input_mux
+# -- Compiling architecture two_input_mux_arch of two_input_mux
+vcom mux.vhdl
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity two_input_mux
+# -- Compiling architecture two_input_mux_arch of two_input_mux
+vcom mux.vhdl
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity two_input_mux
+# -- Compiling architecture two_input_mux_arch of two_input_mux
+vsim work.alu
+# vsim work.alu 
 # Loading std.standard
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.std_logic_arith(body)
 # Loading ieee.std_logic_signed(body)
-# Refreshing /nfs/home/s/sal_rahm/316/32-bit-CPU/work.next_address(next_address_arch)
-# Loading work.next_address(next_address_arch)
-# do ./next_address_tester.do 
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 1  Instance: /next_address
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 0 ns  Iteration: 1  Instance: /next_address
+# Loading work.alu(alu_architecture)#1
+
+
+
+
+vcom pc_register.vhdl
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity pc_register
+# -- Compiling architecture pc_register_arch of pc_register
+# ** Error: pc_register.vhdl(19): near "IF": syntax error
+# ** Error: pc_register.vhdl(24): Labels do not match: 'pc_register_arch' and 'proces'.
+# ** Error: pc_register.vhdl(24): VHDL Compiler exiting
+# /nfs/sw_cmc/x86_64.EL7/tools/mentor.2011/modelsim_6.6g/modeltech/linux_x86_64/vcom failed.
+vcom pc_register.vhdl
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity pc_register
+# -- Compiling architecture pc_register_arch of pc_register
+# ** Error: pc_register.vhdl(19): near "IF": syntax error
+# /nfs/sw_cmc/x86_64.EL7/tools/mentor.2011/modelsim_6.6g/modeltech/linux_x86_64/vcom failed.
+# Window cannot be closed because the modal window "Quit Vsim" is still open.
+vcom pc_register.vhdl
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity pc_register
+# -- Compiling architecture pc_register_arch of pc_register
+# ** Error: pc_register.vhdl(19): near "IF": syntax error
+# /nfs/sw_cmc/x86_64.EL7/tools/mentor.2011/modelsim_6.6g/modeltech/linux_x86_64/vcom failed.
+vcom pc_register.vhdl
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity pc_register
+# -- Compiling architecture pc_register_arch of pc_register
+# ** Error: pc_register.vhdl(19): near "IF": syntax error
+# /nfs/sw_cmc/x86_64.EL7/tools/mentor.2011/modelsim_6.6g/modeltech/linux_x86_64/vcom failed.
+vcom pc_register.vhdl
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity pc_register
+# -- Compiling architecture pc_register_arch of pc_register
+vcom pc_register.vhdl
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity pc_register
+# -- Compiling architecture pc_register_arch of pc_register
+vsim -novopt work.two_input_mux
+# vsim -novopt work.two_input_mux 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Refreshing /nfs/home/s/sal_rahm/316/32-bit-CPU/work.two_input_mux(two_input_mux_arch)
+# Loading work.two_input_mux(two_input_mux_arch)
+force -freeze sim:/two_input_mux/s 1 0
+vsim -novopt -do ./mux_tester.do mux
+# vsim -do ./mux_tester.do -novopt mux 
+# ** Error: (vsim-3170) Could not find '/nfs/home/s/sal_rahm/316/32-bit-CPU/work.mux'.
+# Error loading design
+vsim -novopt -do ./mux_tester.do two_input_mux
+# vsim -do ./mux_tester.do -novopt two_input_mux 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.two_input_mux(two_input_mux_arch)
+# do ./mux_tester.do 

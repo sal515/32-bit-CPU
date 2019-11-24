@@ -19,7 +19,6 @@ BEGIN
     -- 00010 there: add r2, r2, r1 ; r2 = r2 + r1 = r2 + 1
     -- 00011 j there ; goto label there
 process(instr_addr)
-  begin
     CASE instr_addr IS
             -- addi r1, r0, 1
         WHEN "00000" =>

@@ -43,15 +43,73 @@ Z13 Mx1 4 ieee 15 std_logic_arith
 R9
 R10
 !s100 ZnW2zfCABPg:LPS3GEg@]3
-Ed_cache
-Z14 w1574627709
-Z15 DPx4 ieee 11 numeric_std 0 22 =NSdli^?T5OD8;4F<blj<3
-R3
-Z16 DPx4 ieee 18 std_logic_unsigned 0 22 hEMVMlaNCR^<OOoVNV;m90
+Econtroller
+Z14 w1574715532
 R5
 R1
-Z17 8/nfs/home/s/sal_rahm/316/32-bit-CPU/d_cache.vhdl
-Z18 F/nfs/home/s/sal_rahm/316/32-bit-CPU/d_cache.vhdl
+Z15 8/nfs/home/s/sal_rahm/316/32-bit-CPU/controller.vhdl
+Z16 F/nfs/home/s/sal_rahm/316/32-bit-CPU/controller.vhdl
+l0
+L5
+V?S9TG`ZM8bm<ABEdl:Z:51
+R8
+32
+R9
+R10
+!s100 RnF;?FSI5i3U`eM_5;OiS3
+Acontroller_arch
+R5
+DEx4 work 10 controller 0 22 ?S9TG`ZM8bm<ABEdl:Z:51
+l46
+L43
+Vi4n6SWZl88fI[oCcl1TGF2
+R8
+32
+Z17 Mx1 4 ieee 14 std_logic_1164
+R9
+R10
+!s100 Xj:ilMj7M3Mfl=OJ3R1:50
+Ecpu
+Z18 w1574719221
+R3
+R4
+R5
+R1
+Z19 8/nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl
+Z20 F/nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl
+l0
+L6
+V5V0E`T7@7UkMWl_mRTXYU0
+R8
+32
+R9
+R10
+!s100 BDn2aABXBQ6mo=0eV;U^G2
+Acpu_arch
+R3
+R4
+R5
+DEx4 work 3 cpu 0 22 5V0E`T7@7UkMWl_mRTXYU0
+l88
+L17
+VGenXZ2f19bZ3Wh]D:1Y5S3
+R8
+32
+R11
+R12
+R13
+R9
+R10
+!s100 2RW4Y7zIKFmdnGnNW1aS83
+Ed_cache
+Z21 w1574627709
+Z22 DPx4 ieee 11 numeric_std 0 22 =NSdli^?T5OD8;4F<blj<3
+R3
+Z23 DPx4 ieee 18 std_logic_unsigned 0 22 hEMVMlaNCR^<OOoVNV;m90
+R5
+R1
+Z24 8/nfs/home/s/sal_rahm/316/32-bit-CPU/d_cache.vhdl
+Z25 F/nfs/home/s/sal_rahm/316/32-bit-CPU/d_cache.vhdl
 l0
 L6
 VHQGfEVdIY91G]>7PKIhPz0
@@ -61,9 +119,9 @@ R9
 R10
 !s100 Sjm4;0M7?Re_7z5`b>U6Q3
 Ad_cache_arch
-R15
+R22
 R3
-R16
+R23
 R5
 DEx4 work 7 d_cache 0 22 HQGfEVdIY91G]>7PKIhPz0
 l22
@@ -71,21 +129,50 @@ L17
 V_C<:KN4la_847bl7c6gU31
 R8
 32
-Z19 Mx4 4 ieee 14 std_logic_1164
-Z20 Mx3 4 ieee 18 std_logic_unsigned
-Z21 Mx2 4 ieee 15 std_logic_arith
-Z22 Mx1 4 ieee 11 numeric_std
+Z26 Mx4 4 ieee 14 std_logic_1164
+Z27 Mx3 4 ieee 18 std_logic_unsigned
+Z28 Mx2 4 ieee 15 std_logic_arith
+Z29 Mx1 4 ieee 11 numeric_std
 R9
 R10
 !s100 B=iUFU7o[GF3@8oiccPS90
-Ei_cache
-Z23 w1574569357
-R3
-R16
+Edatapath
+Z30 w1574718790
+R22
 R5
 R1
-Z24 8/nfs/home/s/sal_rahm/316/32-bit-CPU/i_cache.vhdl
-Z25 F/nfs/home/s/sal_rahm/316/32-bit-CPU/i_cache.vhdl
+Z31 8/nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl
+Z32 F/nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl
+l0
+L5
+VeeUa^o<gh=G6PDJHRP@Yd0
+R8
+32
+R9
+R10
+!s100 98`4ncT[1?dlI5mTA:3ez0
+Adatapath_arch
+R22
+R5
+DEx4 work 8 datapath 0 22 eeUa^o<gh=G6PDJHRP@Yd0
+l189
+L50
+Vce=PWoU2l<Ok2M4;:lFO00
+R8
+32
+Z33 Mx2 4 ieee 14 std_logic_1164
+R29
+R9
+R10
+!s100 >=NLGUnIgjLN:dX3_XFdK1
+Ei_cache
+Z34 w1574569357
+R3
+R23
+R5
+R1
+Z35 8/nfs/home/s/sal_rahm/316/32-bit-CPU/i_cache.vhdl
+Z36 F/nfs/home/s/sal_rahm/316/32-bit-CPU/i_cache.vhdl
 l0
 L5
 V_hH5LK?7JEW7V=oo8RTQQ0
@@ -96,7 +183,7 @@ R10
 !s100 ?gK]5?U4:@c[?4Yb?7>9]3
 Ai_cache_arch
 R3
-R16
+R23
 R5
 DEx4 work 7 i_cache 0 22 _hH5LK?7JEW7V=oo8RTQQ0
 l14
@@ -105,19 +192,19 @@ VmRe>W^dmnEMz3SWC1E_953
 R8
 32
 R11
-Z26 Mx2 4 ieee 18 std_logic_unsigned
+Z37 Mx2 4 ieee 18 std_logic_unsigned
 R13
 R9
 R10
 !s100 I79SJ>C5X4`D:<MgB@YWE0
 Enext_address
-Z27 w1573112327
+Z38 w1573112327
 R3
 R4
 R5
 R1
-Z28 8/nfs/home/s/sal_rahm/316/32-bit-CPU/next_address.vhd
-Z29 F/nfs/home/s/sal_rahm/316/32-bit-CPU/next_address.vhd
+Z39 8/nfs/home/s/sal_rahm/316/32-bit-CPU/next_address.vhd
+Z40 F/nfs/home/s/sal_rahm/316/32-bit-CPU/next_address.vhd
 l0
 L6
 VVfUAE:f2[CmUTR2YCQZFe2
@@ -143,11 +230,11 @@ R9
 R10
 !s100 7oTXZdUnI2S:H4=_Nl[I:2
 Epc_register
-Z30 w1574573015
+Z41 w1574573015
 R5
 R1
-Z31 8/nfs/home/s/sal_rahm/316/32-bit-CPU/pc_register.vhdl
-Z32 F/nfs/home/s/sal_rahm/316/32-bit-CPU/pc_register.vhdl
+Z42 8/nfs/home/s/sal_rahm/316/32-bit-CPU/pc_register.vhdl
+Z43 F/nfs/home/s/sal_rahm/316/32-bit-CPU/pc_register.vhdl
 l0
 L5
 VR:_dWbBkTYUZ867R]ODL[0
@@ -165,18 +252,18 @@ Vl[Ric45lHD;BPl^`0zHo61
 !s100 =NTbUbl1W8SI5zEKO>n060
 R8
 32
-Z33 Mx1 4 ieee 14 std_logic_1164
+R17
 R9
 R10
 Eregfile
-Z34 w1574635046
-R15
+Z44 w1574635046
+R22
 R3
-R16
+R23
 R5
 R1
-Z35 8/nfs/home/s/sal_rahm/316/32-bit-CPU/32-bit-register.vhd
-Z36 F/nfs/home/s/sal_rahm/316/32-bit-CPU/32-bit-register.vhd
+Z45 8/nfs/home/s/sal_rahm/316/32-bit-CPU/32-bit-register.vhd
+Z46 F/nfs/home/s/sal_rahm/316/32-bit-CPU/32-bit-register.vhd
 l0
 L8
 VIMejJj9R_4<RI^oUH4Da<1
@@ -186,9 +273,9 @@ R9
 R10
 !s100 8lRgn]^o2FkO:m:QRMdH[0
 Aregister_file_arch
-R15
+R22
 R3
-R16
+R23
 R5
 DEx4 work 7 regfile 0 22 IMejJj9R_4<RI^oUH4Da<1
 l28
@@ -196,21 +283,21 @@ L23
 VKc>5kk<0l1jJdI77gdAbk0
 R8
 32
-R19
-R20
-R21
-R22
+R26
+R27
+R28
+R29
 R9
 R10
 !s100 ?[=3W?B=^Mih<Cih^SaU32
 Esign_extend
-Z37 w1574653324
+Z47 w1574653324
 R3
-R16
+R23
 R5
 R1
-Z38 8/nfs/home/s/sal_rahm/316/32-bit-CPU/sign_extend.vhdl
-Z39 F/nfs/home/s/sal_rahm/316/32-bit-CPU/sign_extend.vhdl
+Z48 8/nfs/home/s/sal_rahm/316/32-bit-CPU/sign_extend.vhdl
+Z49 F/nfs/home/s/sal_rahm/316/32-bit-CPU/sign_extend.vhdl
 l0
 L5
 V5:cgBWf9U[S;dTI?B4`3Z0
@@ -221,28 +308,28 @@ R9
 R10
 Asign_extend_arch
 R3
-R16
+R23
 R5
-Z40 DEx4 work 11 sign_extend 0 22 5:cgBWf9U[S;dTI?B4`3Z0
+Z50 DEx4 work 11 sign_extend 0 22 5:cgBWf9U[S;dTI?B4`3Z0
 l15
 L13
-Z41 VTKDCZJ_VUL`OI7<c`W:?k3
-Z42 !s100 D02LE;848KEGi9P7>7?UT2
+Z51 VTKDCZJ_VUL`OI7<c`W:?k3
+Z52 !s100 D02LE;848KEGi9P7>7?UT2
 R8
 32
 R11
-R26
+R37
 R13
 R9
 R10
 Etwo_input_mux
-Z43 w1574569494
+Z53 w1574569494
 R3
-R16
+R23
 R5
 R1
-Z44 8/nfs/home/s/sal_rahm/316/32-bit-CPU/mux.vhdl
-Z45 F/nfs/home/s/sal_rahm/316/32-bit-CPU/mux.vhdl
+Z54 8/nfs/home/s/sal_rahm/316/32-bit-CPU/mux.vhdl
+Z55 F/nfs/home/s/sal_rahm/316/32-bit-CPU/mux.vhdl
 l0
 L5
 VNF4k9@FTDbA3fN_]<MTlR1
@@ -253,7 +340,7 @@ R10
 !s100 7LND126182US83KjcfVN;2
 Atwo_input_mux_arch
 R3
-R16
+R23
 R5
 DEx4 work 13 two_input_mux 0 22 NF4k9@FTDbA3fN_]<MTlR1
 l16
@@ -262,8 +349,40 @@ V66A6>kL9zl6[d4Q=4J_C50
 R8
 32
 R11
-R26
+R37
 R13
 R9
 R10
 !s100 [dgZD43VW>8fUnnBV`4Wn2
+Etwo_input_mux_5_bit
+Z56 w1574718587
+R3
+R23
+R5
+R1
+Z57 8/nfs/home/s/sal_rahm/316/32-bit-CPU/mux_5_bit.vhdl
+Z58 F/nfs/home/s/sal_rahm/316/32-bit-CPU/mux_5_bit.vhdl
+l0
+L5
+Vho7T^CBWGY:N:5]K2`[En1
+R8
+32
+R9
+R10
+!s100 z0E`DVRRI7:GQU<jNzFm<1
+Atwo_input_5_bit_mux_arch
+R3
+R23
+R5
+DEx4 work 19 two_input_mux_5_bit 0 22 ho7T^CBWGY:N:5]K2`[En1
+l16
+L14
+VIQRPYG58IkZOJ;z3YYok91
+R8
+32
+R11
+R37
+R13
+R9
+R10
+!s100 =Elo6icGNY<X6B9`Ke:GU0

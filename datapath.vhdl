@@ -30,7 +30,7 @@ ENTITY datapath IS
         func : IN std_logic_vector(1 DOWNTO 0);
 
         overflow : OUT std_logic;
-        zero : OUT std_logic
+        zero : OUT std_logic;
 
         -- d-cache ports
         data_write : IN std_logic;
@@ -43,7 +43,7 @@ ENTITY datapath IS
 
         rs_out : OUT std_logic_vector(31 DOWNTO 0);
         rt_out : OUT std_logic_vector(31 DOWNTO 0);
-        pc_out : OUT std_logic_vector(31 DOWNTO 0);
+        pc_out : OUT std_logic_vector(31 DOWNTO 0)
     );
 END datapath;
 
@@ -81,9 +81,21 @@ ARCHITECTURE datapath_arch OF datapath IS
             s : IN std_logic;
             in0 : IN std_logic_vector(31 DOWNTO 0);
             in1 : IN std_logic_vector(31 DOWNTO 0);
-            mux_out : OUT std_logic_vector(31 DOWNTO 0);
+            mux_out : OUT std_logic_vector(31 DOWNTO 0)
         );
     END COMPONENT;
+
+
+
+    COMPONENT two_input_mux_5_bit IS
+        PORT (
+            s : IN std_logic;
+            in0 : IN std_logic_vector(4 DOWNTO 0);
+            in1 : IN std_logic_vector(4 DOWNTO 0);
+            mux_out : OUT std_logic_vector(4 DOWNTO 0)
+        );
+    END COMPONENT;
+
 
     COMPONENT regfile
         PORT (
@@ -183,7 +195,7 @@ BEGIN
         q => q_out
     );
 
-    i_cache : i_cache PORT MAP(
+    icache : i_cache PORT MAP(
         instr_addr => q_out(4 DOWNTO 0),
         i_cache_instr_out => instruction_cache_out
     );
@@ -198,26 +210,26 @@ BEGIN
         next_pc => next_pc_out
     );
 
-    reg_dst_mux : two_input_mux PORT MAP(
+    reg_dst_mux : two_input_mux_5_bit PORT MAP(
         s => reg_dst,
         in0 => instruction_cache_out(20 DOWNTO 16),
         in1 => instruction_cache_out(15 DOWNTO 11),
         mux_out => addr_out
     );
 
-    regFile : regfile PORT MAP(
+    rf : regfile PORT MAP(
         din => d_cache_mux_out,
         reset => reset,
         clk => clk,
         write => reg_write,
         read_a => instruction_cache_out(25 DOWNTO 21),
         read_b => instruction_cache_out(20 DOWNTO 16),
-        write_address => addr_out
-        out_a => rs_data_out
+        write_address => addr_out,
+        out_a => rs_data_out,
         out_b => rt_data_out
     );
 
-    sign_extend : sign_extend PORT MAP(
+    signExt : sign_extend PORT MAP(
         func => func,
         sign_extend_in => instruction_cache_out(15 DOWNTO 0),
         sign_extend_out => sign_extend_value_out
@@ -237,7 +249,7 @@ BEGIN
         logic_func => logic_func,
         func => func,
         output => alu_out,
-        overflow => overflow
+        overflow => overflow,
         zero => zero
     );
 

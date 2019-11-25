@@ -3,7 +3,6 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.std_logic_unsigned.all;
-use ieee.numeric_std.all;
 
 entity regfile is
 port( 
@@ -45,6 +44,10 @@ begin
         end if;
         
     end process;
+
+
+
+    
 
 end register_file_arch ; 
 

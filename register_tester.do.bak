@@ -1,0 +1,35 @@
+restart -f   -- to reset values
+
+add wave *
+
+
+
+force clock 2#0
+force reset 2#1
+force d 16#00000011
+run 5
+
+force clock 2#1
+force reset 2#0
+force d 16#00000011
+run 5
+
+force clock 2#0
+force reset 2#1
+force d 16#00000011
+run 5
+
+force clock 2#1
+force reset 2#0
+force d 16#00000111
+run 5
+
+force clock 2#0
+force reset 2#0
+force d 16#11111111
+run 5
+
+force clock 2#1
+force reset 2#0
+force d 16#11111111
+run 5

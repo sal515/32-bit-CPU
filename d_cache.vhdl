@@ -1,6 +1,7 @@
 LIBRARY IEEE;
 USE IEEE.std_logic_1164.ALL;
 USE IEEE.std_logic_unsigned.ALL;
+use ieee.numeric_std.all;
 
 ENTITY d_cache IS
     PORT (
@@ -23,12 +24,18 @@ BEGIN
     PROCESS (clock, data_write, reset, addr, d_in)
     BEGIN
         IF reset = '1' THEN
-            FOR i IN 0 TO 31 LOOP
-                d_cache(i) <= (OTHERS => '0');
-            END LOOP;
+            -- FOR i IN 0 TO 31 LOOP
+            --     d_cache(i) <= (OTHERS => '0');
+            -- END LOOP;
+            
+            d_cache <= (others => (others => '0'));
+            
         ELSIF (clock = '1' AND clock'event AND data_write = '1') THEN
             -- IF data_write = '1' THEN
+            -- d_cache(to_integer(unsigned(addr))) <= d_in;
+            
             d_cache(CONV_INTEGER(addr)) <= d_in;
+            
             -- END IF;
         END IF;
 
@@ -37,3 +44,4 @@ BEGIN
     d_out <= d_cache(CONV_INTEGER(addr));
 
 END d_cache_arch;
+

@@ -3,6 +3,7 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.std_logic_unsigned.all;
+use ieee.numeric_std.all;
 
 entity regfile is
 port( 
@@ -26,11 +27,11 @@ architecture register_file_arch of regfile is
 
 begin
 
-    read: process(read_a, read_b)
+    read: process(read_a, read_b, reg_arr)
     begin
             -- converting std vector to integer - to find the appropriate register to access           
-            out_a <= reg_arr(CONV_INTEGER(read_a));
-            out_b <= reg_arr(CONV_INTEGER(read_b)); 
+            out_a <= reg_arr(to_integer(unsigned(read_a)));
+            out_b <= reg_arr(to_integer(unsigned(read_b))); 
     end process;
 
     reg_file_update: process(clk, reset)
@@ -40,14 +41,10 @@ begin
             reg_arr <= (others => (others => '0'));
         
         elsif(clk'event and clk = '1' and write = '1') then
-            reg_arr(CONV_INTEGER(write_address)) <= din;
+            reg_arr(to_integer(unsigned(write_address))) <= din;
         end if;
         
     end process;
-
-
-
-    
 
 end register_file_arch ; 
 

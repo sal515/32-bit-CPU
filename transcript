@@ -10,15 +10,7 @@
 # //
 # 
 #  
-vcom /nfs/home/s/sal_rahm/316/32-bit-CPU/alu.vhd
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_signed
-# -- Compiling entity alu
-# -- Compiling architecture alu_architecture of alu
-vcom -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/next_address.vhd
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/next_address.vhd
 # Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
 # -- Loading package standard
 # -- Loading package std_logic_1164
@@ -26,23 +18,43 @@ vcom -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/next_address.vhd
 # -- Loading package std_logic_signed
 # -- Compiling entity next_address
 # -- Compiling architecture next_address_arch of next_address
-vcom -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/32-bit-register.vhd
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/d_cache.vhdl
 # Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
 # -- Loading package standard
 # -- Loading package std_logic_1164
 # -- Loading package std_logic_arith
 # -- Loading package std_logic_unsigned
-# -- Compiling entity regfile
-# -- Compiling architecture register_file_arch of regfile
-vcom alu.vhd
+# -- Loading package numeric_std
+# -- Compiling entity d_cache
+# -- Compiling architecture d_cache_arch of d_cache
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/d_cache.vhdl
 # Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
 # -- Loading package standard
 # -- Loading package std_logic_1164
 # -- Loading package std_logic_arith
-# -- Loading package std_logic_signed
-# -- Compiling entity alu
-# -- Compiling architecture alu_architecture of alu
-vcom next_address.vhd
+# -- Loading package std_logic_unsigned
+# -- Loading package numeric_std
+# -- Compiling entity d_cache
+# -- Compiling architecture d_cache_arch of d_cache
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/d_cache.vhdl
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package numeric_std
+# -- Compiling entity d_cache
+# -- Compiling architecture d_cache_arch of d_cache
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/d_cache.vhdl
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package numeric_std
+# -- Compiling entity d_cache
+# -- Compiling architecture d_cache_arch of d_cache
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/next_address.vhd
 # Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
 # -- Loading package standard
 # -- Loading package std_logic_1164
@@ -50,12 +62,57 @@ vcom next_address.vhd
 # -- Loading package std_logic_signed
 # -- Compiling entity next_address
 # -- Compiling architecture next_address_arch of next_address
-vcom regfile
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/pc_register.vhdl
 # Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# ** Error: (vcom-7) Failed to open design unit file "regfile" in read mode.
-# No such file or directory. (errno = ENOENT)
-# /nfs/sw_cmc/x86_64.EL7/tools/mentor.2011/modelsim_6.6g/modeltech/linux_x86_64/vcom failed.
-vcom 32-bit-register.vhd
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity pc_register
+# -- Compiling architecture pc_register_arch of pc_register
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/mux.vhdl
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity two_input_mux
+# -- Compiling architecture two_input_mux_arch of two_input_mux
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/i_cache.vhdl
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity i_cache
+# -- Compiling architecture i_cache_arch of i_cache
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Compiling entity datapath
+# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(30): (vcom-1294) Declaration with designator "func" already exists in this region.
+# ** Prior declaration of "func" is at /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(19).
+# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(36): (vcom-1136) Unknown identifier "data_write".
+# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(36): Bad resolution function (std_logic) for type (error).
+# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(36): near ":": expecting ';' or ')'
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/d_cache.vhdl
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package numeric_std
+# -- Compiling entity d_cache
+# -- Compiling architecture d_cache_arch of d_cache
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/alu.vhd
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_signed
+# -- Compiling entity alu
+# -- Compiling architecture alu_architecture of alu
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/32-bit-register_file.vhd
 # Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
 # -- Loading package standard
 # -- Loading package std_logic_1164
@@ -63,73 +120,154 @@ vcom 32-bit-register.vhd
 # -- Loading package std_logic_unsigned
 # -- Compiling entity regfile
 # -- Compiling architecture register_file_arch of regfile
-vcom d_cache.vhdl
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/32-bit-register.vhd
 # Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
 # -- Loading package standard
 # -- Loading package std_logic_1164
 # -- Loading package std_logic_arith
 # -- Loading package std_logic_unsigned
+# -- Loading package numeric_std
+# -- Compiling entity regfile
+# -- Compiling architecture register_file_arch of regfile
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/32-bit-register.vhd
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package numeric_std
+# -- Compiling entity regfile
+# -- Compiling architecture register_file_arch of regfile
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/32-bit-register.vhd
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package numeric_std
+# -- Compiling entity regfile
+# -- Compiling architecture register_file_arch of regfile
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/32-bit-register.vhd
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package numeric_std
+# -- Compiling entity regfile
+# -- Compiling architecture register_file_arch of regfile
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/alu.vhd
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_signed
+# -- Compiling entity alu
+# -- Compiling architecture alu_architecture of alu
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/32-bit-register.vhd
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package numeric_std
+# -- Compiling entity regfile
+# -- Compiling architecture register_file_arch of regfile
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/alu.vhd
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_signed
+# -- Compiling entity alu
+# -- Compiling architecture alu_architecture of alu
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/d_cache.vhdl
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package numeric_std
 # -- Compiling entity d_cache
 # -- Compiling architecture d_cache_arch of d_cache
-# ** Error: d_cache.vhdl(23): (vcom-1136) Unknown identifier "din".
-# ** Error: d_cache.vhdl(23): Expression is not a signal.
-# ** Error: d_cache.vhdl(63): VHDL Compiler exiting
-# /nfs/sw_cmc/x86_64.EL7/tools/mentor.2011/modelsim_6.6g/modeltech/linux_x86_64/vcom failed.
-vcom d_cache.vhdl
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Compiling entity datapath
+# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(30): (vcom-1294) Declaration with designator "func" already exists in this region.
+# ** Prior declaration of "func" is at /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(19).
+# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(36): (vcom-1136) Unknown identifier "data_write".
+# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(36): Bad resolution function (std_logic) for type (error).
+# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(36): near ":": expecting ';' or ')'
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/32-bit-register.vhd
 # Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
 # -- Loading package standard
 # -- Loading package std_logic_1164
 # -- Loading package std_logic_arith
 # -- Loading package std_logic_unsigned
+# -- Loading package numeric_std
+# -- Compiling entity regfile
+# -- Compiling architecture register_file_arch of regfile
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/32-bit-register.vhd
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package numeric_std
+# -- Compiling entity regfile
+# -- Compiling architecture register_file_arch of regfile
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/32-bit-register.vhd
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package numeric_std
+# -- Compiling entity regfile
+# -- Compiling architecture register_file_arch of regfile
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/alu.vhd
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_signed
+# -- Compiling entity alu
+# -- Compiling architecture alu_architecture of alu
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/d_cache.vhdl
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package numeric_std
 # -- Compiling entity d_cache
 # -- Compiling architecture d_cache_arch of d_cache
-vcom d_cache.vhdl
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl
 # Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
 # -- Loading package standard
 # -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Compiling entity d_cache
-# -- Compiling architecture d_cache_arch of d_cache
-vcom i_cache.vhdl
+# -- Loading package numeric_std
+# -- Compiling entity datapath
+# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(30): (vcom-1294) Declaration with designator "func" already exists in this region.
+# ** Prior declaration of "func" is at /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(19).
+# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(36): (vcom-1136) Unknown identifier "data_write".
+# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(36): Bad resolution function (std_logic) for type (error).
+# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(36): near ":": expecting ';' or ')'
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl
 # Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
 # -- Loading package standard
 # -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Compiling entity i_cache
-# -- Compiling architecture i_cache_arch of i_cache
-# ** Error: i_cache.vhdl(22): Illegal concurrent statement.
-# ** Error: i_cache.vhdl(28): Illegal target for signal assignment.
-# ** Error: i_cache.vhdl(28): (vcom-1136) Unknown identifier "ic_out".
-# ** Error: i_cache.vhdl(31): Illegal target for signal assignment.
-# ** Error: i_cache.vhdl(31): (vcom-1136) Unknown identifier "ic_out".
-# ** Error: i_cache.vhdl(34): Illegal target for signal assignment.
-# ** Error: i_cache.vhdl(34): (vcom-1136) Unknown identifier "ic_out".
-# ** Error: i_cache.vhdl(37): Illegal target for signal assignment.
-# ** Error: i_cache.vhdl(37): (vcom-1136) Unknown identifier "ic_out".
-# ** Error: i_cache.vhdl(40): VHDL Compiler exiting
-# /nfs/sw_cmc/x86_64.EL7/tools/mentor.2011/modelsim_6.6g/modeltech/linux_x86_64/vcom failed.
-vcom i_cache.vhdl
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Compiling entity i_cache
-# -- Compiling architecture i_cache_arch of i_cache
-# ** Error: i_cache.vhdl(22): Illegal concurrent statement.
-# ** Error: i_cache.vhdl(28): Illegal target for signal assignment.
-# ** Error: i_cache.vhdl(28): (vcom-1136) Unknown identifier "ic_out".
-# ** Error: i_cache.vhdl(31): Illegal target for signal assignment.
-# ** Error: i_cache.vhdl(31): (vcom-1136) Unknown identifier "ic_out".
-# ** Error: i_cache.vhdl(34): Illegal target for signal assignment.
-# ** Error: i_cache.vhdl(34): (vcom-1136) Unknown identifier "ic_out".
-# ** Error: i_cache.vhdl(37): Illegal target for signal assignment.
-# ** Error: i_cache.vhdl(37): (vcom-1136) Unknown identifier "ic_out".
-# ** Error: i_cache.vhdl(40): VHDL Compiler exiting
-# /nfs/sw_cmc/x86_64.EL7/tools/mentor.2011/modelsim_6.6g/modeltech/linux_x86_64/vcom failed.
-vcom i_cache.vhdl
+# -- Loading package numeric_std
+# -- Compiling entity datapath
+# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(30): (vcom-1294) Declaration with designator "func" already exists in this region.
+# ** Prior declaration of "func" is at /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(19).
+# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(36): (vcom-1136) Unknown identifier "data_write".
+# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(36): Bad resolution function (std_logic) for type (error).
+# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(36): near ":": expecting ';' or ')'
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/i_cache.vhdl
 # Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
 # -- Loading package standard
 # -- Loading package std_logic_1164
@@ -137,32 +275,7 @@ vcom i_cache.vhdl
 # -- Loading package std_logic_unsigned
 # -- Compiling entity i_cache
 # -- Compiling architecture i_cache_arch of i_cache
-vcom i_cache.vhdl
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Compiling entity i_cache
-# -- Compiling architecture i_cache_arch of i_cache
-vcom i_cache.vhdl
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Compiling entity i_cache
-# -- Compiling architecture i_cache_arch of i_cache
-vcom mux.vhdl
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Compiling entity two_input_mux
-# ** Error: mux.vhdl(11): near ")": expecting "IDENTIFIER"
-# /nfs/sw_cmc/x86_64.EL7/tools/mentor.2011/modelsim_6.6g/modeltech/linux_x86_64/vcom failed.
-vcom mux.vhdl
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/mux.vhdl
 # Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
 # -- Loading package standard
 # -- Loading package std_logic_1164
@@ -170,123 +283,478 @@ vcom mux.vhdl
 # -- Loading package std_logic_unsigned
 # -- Compiling entity two_input_mux
 # -- Compiling architecture two_input_mux_arch of two_input_mux
-# ** Error: mux.vhdl(18): Illegal concurrent statement.
-# ** Error: mux.vhdl(19): String literal found where non-array type ieee.std_logic_1164.std_ulogic was expected.
-# ** Error: mux.vhdl(21): String literal found where non-array type ieee.std_logic_1164.std_ulogic was expected.
-# ** Error: mux.vhdl(27): VHDL Compiler exiting
-# /nfs/sw_cmc/x86_64.EL7/tools/mentor.2011/modelsim_6.6g/modeltech/linux_x86_64/vcom failed.
-vcom mux.vhdl
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/next_address.vhd
 # Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
 # -- Loading package standard
 # -- Loading package std_logic_1164
 # -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Compiling entity two_input_mux
-# -- Compiling architecture two_input_mux_arch of two_input_mux
-# ** Error: mux.vhdl(22): String literal found where non-array type ieee.std_logic_1164.std_ulogic was expected.
-# ** Error: mux.vhdl(24): String literal found where non-array type ieee.std_logic_1164.std_ulogic was expected.
-# ** Error: mux.vhdl(31): VHDL Compiler exiting
-# /nfs/sw_cmc/x86_64.EL7/tools/mentor.2011/modelsim_6.6g/modeltech/linux_x86_64/vcom failed.
-vcom mux.vhdl
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Compiling entity two_input_mux
-# -- Compiling architecture two_input_mux_arch of two_input_mux
-vcom mux.vhdl
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Compiling entity two_input_mux
-# -- Compiling architecture two_input_mux_arch of two_input_mux
-vcom mux.vhdl
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Compiling entity two_input_mux
-# -- Compiling architecture two_input_mux_arch of two_input_mux
-vsim work.alu
-# vsim work.alu 
-# Loading std.standard
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.std_logic_arith(body)
-# Loading ieee.std_logic_signed(body)
-# Loading work.alu(alu_architecture)#1
-
-
-
-
-vcom pc_register.vhdl
+# -- Loading package std_logic_signed
+# -- Compiling entity next_address
+# -- Compiling architecture next_address_arch of next_address
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/pc_register.vhdl
 # Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
 # -- Loading package standard
 # -- Loading package std_logic_1164
 # -- Compiling entity pc_register
 # -- Compiling architecture pc_register_arch of pc_register
-# ** Error: pc_register.vhdl(19): near "IF": syntax error
-# ** Error: pc_register.vhdl(24): Labels do not match: 'pc_register_arch' and 'proces'.
-# ** Error: pc_register.vhdl(24): VHDL Compiler exiting
-# /nfs/sw_cmc/x86_64.EL7/tools/mentor.2011/modelsim_6.6g/modeltech/linux_x86_64/vcom failed.
-vcom pc_register.vhdl
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity pc_register
-# -- Compiling architecture pc_register_arch of pc_register
-# ** Error: pc_register.vhdl(19): near "IF": syntax error
-# /nfs/sw_cmc/x86_64.EL7/tools/mentor.2011/modelsim_6.6g/modeltech/linux_x86_64/vcom failed.
-# Window cannot be closed because the modal window "Quit Vsim" is still open.
-vcom pc_register.vhdl
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity pc_register
-# -- Compiling architecture pc_register_arch of pc_register
-# ** Error: pc_register.vhdl(19): near "IF": syntax error
-# /nfs/sw_cmc/x86_64.EL7/tools/mentor.2011/modelsim_6.6g/modeltech/linux_x86_64/vcom failed.
-vcom pc_register.vhdl
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity pc_register
-# -- Compiling architecture pc_register_arch of pc_register
-# ** Error: pc_register.vhdl(19): near "IF": syntax error
-# /nfs/sw_cmc/x86_64.EL7/tools/mentor.2011/modelsim_6.6g/modeltech/linux_x86_64/vcom failed.
-vcom pc_register.vhdl
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity pc_register
-# -- Compiling architecture pc_register_arch of pc_register
-vcom pc_register.vhdl
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity pc_register
-# -- Compiling architecture pc_register_arch of pc_register
-vsim -novopt work.two_input_mux
-# vsim -novopt work.two_input_mux 
+vsim -novopt -do ./icache_tester.do i_cache
+# vsim -do ./icache_tester.do -novopt i_cache 
 # Loading std.standard
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.std_logic_arith(body)
 # Loading ieee.std_logic_unsigned(body)
-# Refreshing /nfs/home/s/sal_rahm/316/32-bit-CPU/work.two_input_mux(two_input_mux_arch)
-# Loading work.two_input_mux(two_input_mux_arch)
-force -freeze sim:/two_input_mux/s 1 0
-vsim -novopt -do ./mux_tester.do mux
-# vsim -do ./mux_tester.do -novopt mux 
-# ** Error: (vsim-3170) Could not find '/nfs/home/s/sal_rahm/316/32-bit-CPU/work.mux'.
-# Error loading design
-vsim -novopt -do ./mux_tester.do two_input_mux
-# vsim -do ./mux_tester.do -novopt two_input_mux 
+# Refreshing /nfs/home/s/sal_rahm/316/32-bit-CPU/work.i_cache(i_cache_arch)
+# Loading work.i_cache(i_cache_arch)
+# do ./icache_tester.do 
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/32-bit-register.vhd
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package numeric_std
+# -- Compiling entity regfile
+# -- Compiling architecture register_file_arch of regfile
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/alu.vhd
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_signed
+# -- Compiling entity alu
+# -- Compiling architecture alu_architecture of alu
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/d_cache.vhdl
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package numeric_std
+# -- Compiling entity d_cache
+# -- Compiling architecture d_cache_arch of d_cache
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Compiling entity datapath
+# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(30): (vcom-1294) Declaration with designator "func" already exists in this region.
+# ** Prior declaration of "func" is at /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(19).
+# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(36): (vcom-1136) Unknown identifier "data_write".
+# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(36): Bad resolution function (std_logic) for type (error).
+# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(36): near ":": expecting ';' or ')'
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/i_cache.vhdl
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity i_cache
+# -- Compiling architecture i_cache_arch of i_cache
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/mux.vhdl
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity two_input_mux
+# -- Compiling architecture two_input_mux_arch of two_input_mux
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/next_address.vhd
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_signed
+# -- Compiling entity next_address
+# -- Compiling architecture next_address_arch of next_address
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/pc_register.vhdl
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity pc_register
+# -- Compiling architecture pc_register_arch of pc_register
+vsim -novopt -do ./d_cache_tester.do d_cache
+# vsim -do ./d_cache_tester.do -novopt d_cache 
 # Loading std.standard
 # Loading ieee.std_logic_1164(body)
 # Loading ieee.std_logic_arith(body)
 # Loading ieee.std_logic_unsigned(body)
-# Loading work.two_input_mux(two_input_mux_arch)
-# do ./mux_tester.do 
+# Loading ieee.numeric_std(body)
+# Refreshing /nfs/home/s/sal_rahm/316/32-bit-CPU/work.d_cache(d_cache_arch)
+# Loading work.d_cache(d_cache_arch)
+# do ./d_cache_tester.do 
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /d_cache
+vsim -novopt -do ./d_cache_tester.do d_cache
+# vsim -do ./d_cache_tester.do -novopt d_cache 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.d_cache(d_cache_arch)
+# do ./d_cache_tester.do 
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /d_cache
+vsim -novopt -do ./d_cache_tester.do d_cache
+# vsim -do ./d_cache_tester.do -novopt d_cache 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.d_cache(d_cache_arch)
+# do ./d_cache_tester.do 
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /d_cache
+vsim -novopt -do ./d_cache_tester.do d_cache
+# vsim -do ./d_cache_tester.do -novopt d_cache 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.d_cache(d_cache_arch)
+# do ./d_cache_tester.do 
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /d_cache
+vsim -novopt -do ./d_cache_tester.do d_cache
+# vsim -do ./d_cache_tester.do -novopt d_cache 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.d_cache(d_cache_arch)
+# do ./d_cache_tester.do 
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ns  Iteration: 0  Instance: /d_cache
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/32-bit-register.vhd
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package numeric_std
+# -- Compiling entity regfile
+# -- Compiling architecture register_file_arch of regfile
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/alu.vhd
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_signed
+# -- Compiling entity alu
+# -- Compiling architecture alu_architecture of alu
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/d_cache.vhdl
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package numeric_std
+# -- Compiling entity d_cache
+# -- Compiling architecture d_cache_arch of d_cache
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Compiling entity datapath
+# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(30): (vcom-1294) Declaration with designator "func" already exists in this region.
+# ** Prior declaration of "func" is at /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(19).
+# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(36): (vcom-1136) Unknown identifier "data_write".
+# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(36): Bad resolution function (std_logic) for type (error).
+# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(36): near ":": expecting ';' or ')'
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/i_cache.vhdl
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity i_cache
+# -- Compiling architecture i_cache_arch of i_cache
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/mux.vhdl
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity two_input_mux
+# -- Compiling architecture two_input_mux_arch of two_input_mux
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/next_address.vhd
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_signed
+# -- Compiling entity next_address
+# -- Compiling architecture next_address_arch of next_address
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/pc_register.vhdl
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity pc_register
+# -- Compiling architecture pc_register_arch of pc_register
+vsim -novopt -do ./d_cache_tester.do d_cache
+# vsim -do ./d_cache_tester.do -novopt d_cache 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Refreshing /nfs/home/s/sal_rahm/316/32-bit-CPU/work.d_cache(d_cache_arch)
+# Loading work.d_cache(d_cache_arch)
+# do ./d_cache_tester.do 
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /d_cache
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 0  Instance: /d_cache
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/sign_extend.vhdl
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity sign_extend
+# -- Compiling architecture sign_extend_arch of sign_extend
+# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/sign_extend.vhdl(24): near "'": syntax error
+# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/sign_extend.vhdl(31): near "else": syntax error
+# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/sign_extend.vhdl(35): near "if": expecting ';'
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/sign_extend.vhdl
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity sign_extend
+# -- Compiling architecture sign_extend_arch of sign_extend
+# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/sign_extend.vhdl(24): near "'": syntax error
+# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/sign_extend.vhdl(31): near "else": syntax error
+# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/sign_extend.vhdl(35): near "if": expecting ';'
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/sign_extend.vhdl
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity sign_extend
+# -- Compiling architecture sign_extend_arch of sign_extend
+# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/sign_extend.vhdl(27): No feasible entries for infix operator "=".
+# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/sign_extend.vhdl(27): Type error resolving infix expression "=" as type std.standard.boolean.
+# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/sign_extend.vhdl(37): No feasible entries for infix operator "=".
+# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/sign_extend.vhdl(37): Type error resolving infix expression "=" as type std.standard.boolean.
+# ** Warning: [14] /nfs/home/s/sal_rahm/316/32-bit-CPU/sign_extend.vhdl(30): (vcom-1272) Length of expected is 32; length of actual is 16.
+# ** Warning: [14] /nfs/home/s/sal_rahm/316/32-bit-CPU/sign_extend.vhdl(34): (vcom-1272) Length of expected is 32; length of actual is 16.
+# ** Warning: [14] /nfs/home/s/sal_rahm/316/32-bit-CPU/sign_extend.vhdl(40): (vcom-1272) Length of expected is 32; length of actual is 16.
+# ** Warning: [14] /nfs/home/s/sal_rahm/316/32-bit-CPU/sign_extend.vhdl(44): (vcom-1272) Length of expected is 32; length of actual is 16.
+# ** Warning: [14] /nfs/home/s/sal_rahm/316/32-bit-CPU/sign_extend.vhdl(50): (vcom-1272) Length of expected is 32; length of actual is 16.
+# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/sign_extend.vhdl(61): VHDL Compiler exiting
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/sign_extend.vhdl
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity sign_extend
+# -- Compiling architecture sign_extend_arch of sign_extend
+# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/sign_extend.vhdl(27): No feasible entries for infix operator "=".
+# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/sign_extend.vhdl(27): Type error resolving infix expression "=" as type std.standard.boolean.
+# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/sign_extend.vhdl(37): No feasible entries for infix operator "=".
+# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/sign_extend.vhdl(37): Type error resolving infix expression "=" as type std.standard.boolean.
+# ** Warning: [14] /nfs/home/s/sal_rahm/316/32-bit-CPU/sign_extend.vhdl(30): (vcom-1272) Length of expected is 32; length of actual is 16.
+# ** Warning: [14] /nfs/home/s/sal_rahm/316/32-bit-CPU/sign_extend.vhdl(34): (vcom-1272) Length of expected is 32; length of actual is 16.
+# ** Warning: [14] /nfs/home/s/sal_rahm/316/32-bit-CPU/sign_extend.vhdl(40): (vcom-1272) Length of expected is 32; length of actual is 16.
+# ** Warning: [14] /nfs/home/s/sal_rahm/316/32-bit-CPU/sign_extend.vhdl(44): (vcom-1272) Length of expected is 32; length of actual is 16.
+# ** Warning: [14] /nfs/home/s/sal_rahm/316/32-bit-CPU/sign_extend.vhdl(50): (vcom-1272) Length of expected is 32; length of actual is 16.
+# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/sign_extend.vhdl(61): VHDL Compiler exiting
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/sign_extend.vhdl
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity sign_extend
+# -- Compiling architecture sign_extend_arch of sign_extend
+# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/sign_extend.vhdl(27): No feasible entries for infix operator "=".
+# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/sign_extend.vhdl(27): Type error resolving infix expression "=" as type std.standard.boolean.
+# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/sign_extend.vhdl(37): No feasible entries for infix operator "=".
+# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/sign_extend.vhdl(37): Type error resolving infix expression "=" as type std.standard.boolean.
+# ** Warning: [14] /nfs/home/s/sal_rahm/316/32-bit-CPU/sign_extend.vhdl(29): (vcom-1272) Length of expected is 32; length of actual is 16.
+# ** Warning: [14] /nfs/home/s/sal_rahm/316/32-bit-CPU/sign_extend.vhdl(33): (vcom-1272) Length of expected is 32; length of actual is 16.
+# ** Warning: [14] /nfs/home/s/sal_rahm/316/32-bit-CPU/sign_extend.vhdl(39): (vcom-1272) Length of expected is 32; length of actual is 16.
+# ** Warning: [14] /nfs/home/s/sal_rahm/316/32-bit-CPU/sign_extend.vhdl(43): (vcom-1272) Length of expected is 32; length of actual is 16.
+# ** Warning: [14] /nfs/home/s/sal_rahm/316/32-bit-CPU/sign_extend.vhdl(49): (vcom-1272) Length of expected is 32; length of actual is 16.
+# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/sign_extend.vhdl(61): VHDL Compiler exiting
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/sign_extend.vhdl
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity sign_extend
+# -- Compiling architecture sign_extend_arch of sign_extend
+# ** Warning: [14] /nfs/home/s/sal_rahm/316/32-bit-CPU/sign_extend.vhdl(27): (vcom-1152) Index value 31 is out of index range 15 downto 0 of ieee.std_logic_1164.std_logic_vector.
+# ** Warning: [14] /nfs/home/s/sal_rahm/316/32-bit-CPU/sign_extend.vhdl(29): (vcom-1272) Length of expected is 32; length of actual is 16.
+# ** Warning: [14] /nfs/home/s/sal_rahm/316/32-bit-CPU/sign_extend.vhdl(33): (vcom-1272) Length of expected is 32; length of actual is 16.
+# ** Warning: [14] /nfs/home/s/sal_rahm/316/32-bit-CPU/sign_extend.vhdl(37): (vcom-1152) Index value 31 is out of index range 15 downto 0 of ieee.std_logic_1164.std_logic_vector.
+# ** Warning: [14] /nfs/home/s/sal_rahm/316/32-bit-CPU/sign_extend.vhdl(39): (vcom-1272) Length of expected is 32; length of actual is 16.
+# ** Warning: [14] /nfs/home/s/sal_rahm/316/32-bit-CPU/sign_extend.vhdl(43): (vcom-1272) Length of expected is 32; length of actual is 16.
+# ** Warning: [14] /nfs/home/s/sal_rahm/316/32-bit-CPU/sign_extend.vhdl(49): (vcom-1272) Length of expected is 32; length of actual is 16.
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/sign_extend.vhdl
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity sign_extend
+# -- Compiling architecture sign_extend_arch of sign_extend
+# ** Warning: [14] /nfs/home/s/sal_rahm/316/32-bit-CPU/sign_extend.vhdl(29): (vcom-1272) Length of expected is 32; length of actual is 16.
+# ** Warning: [14] /nfs/home/s/sal_rahm/316/32-bit-CPU/sign_extend.vhdl(33): (vcom-1272) Length of expected is 32; length of actual is 16.
+# ** Warning: [14] /nfs/home/s/sal_rahm/316/32-bit-CPU/sign_extend.vhdl(37): (vcom-1152) Index value 31 is out of index range 15 downto 0 of ieee.std_logic_1164.std_logic_vector.
+# ** Warning: [14] /nfs/home/s/sal_rahm/316/32-bit-CPU/sign_extend.vhdl(39): (vcom-1272) Length of expected is 32; length of actual is 16.
+# ** Warning: [14] /nfs/home/s/sal_rahm/316/32-bit-CPU/sign_extend.vhdl(43): (vcom-1272) Length of expected is 32; length of actual is 16.
+# ** Warning: [14] /nfs/home/s/sal_rahm/316/32-bit-CPU/sign_extend.vhdl(49): (vcom-1272) Length of expected is 32; length of actual is 16.
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/sign_extend.vhdl
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity sign_extend
+# -- Compiling architecture sign_extend_arch of sign_extend
+# ** Warning: [14] /nfs/home/s/sal_rahm/316/32-bit-CPU/sign_extend.vhdl(37): (vcom-1152) Index value 31 is out of index range 15 downto 0 of ieee.std_logic_1164.std_logic_vector.
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/sign_extend.vhdl
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity sign_extend
+# -- Compiling architecture sign_extend_arch of sign_extend
+vsim -novopt -do ./sign_extend_tester.do sign_extend
+# vsim -do ./sign_extend_tester.do -novopt sign_extend 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Refreshing /nfs/home/s/sal_rahm/316/32-bit-CPU/work.sign_extend(sign_extend_arch)
+# Loading work.sign_extend(sign_extend_arch)
+# do ./sign_extend_tester.do 
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/sign_extend.vhdl
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity sign_extend
+# -- Compiling architecture sign_extend_arch of sign_extend
+vsim -novopt -do ./sign_extend_tester.do sign_extend
+# vsim -do ./sign_extend_tester.do -novopt sign_extend 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Refreshing /nfs/home/s/sal_rahm/316/32-bit-CPU/work.sign_extend(sign_extend_arch)
+# Loading work.sign_extend(sign_extend_arch)
+# do ./sign_extend_tester.do 
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/sign_extend.vhdl
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity sign_extend
+# -- Compiling architecture sign_extend_arch of sign_extend
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/sign_extend.vhdl
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity sign_extend
+# -- Compiling architecture sign_extend_arch of sign_extend
+vsim -novopt -do ./sign_extend_tester.do sign_extend
+# vsim -do ./sign_extend_tester.do -novopt sign_extend 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Refreshing /nfs/home/s/sal_rahm/316/32-bit-CPU/work.sign_extend(sign_extend_arch)
+# Loading work.sign_extend(sign_extend_arch)
+# do ./sign_extend_tester.do 
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/32-bit-register.vhd
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package numeric_std
+# -- Compiling entity regfile
+# -- Compiling architecture register_file_arch of regfile
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/alu.vhd
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_signed
+# -- Compiling entity alu
+# -- Compiling architecture alu_architecture of alu
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/d_cache.vhdl
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package numeric_std
+# -- Compiling entity d_cache
+# -- Compiling architecture d_cache_arch of d_cache
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Compiling entity datapath
+# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(30): (vcom-1294) Declaration with designator "func" already exists in this region.
+# ** Prior declaration of "func" is at /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(19).
+# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(36): (vcom-1136) Unknown identifier "data_write".
+# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(36): Bad resolution function (std_logic) for type (error).
+# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(36): near ":": expecting ';' or ')'
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/i_cache.vhdl
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity i_cache
+# -- Compiling architecture i_cache_arch of i_cache
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/mux.vhdl
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity two_input_mux
+# -- Compiling architecture two_input_mux_arch of two_input_mux
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/next_address.vhd
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_signed
+# -- Compiling entity next_address
+# -- Compiling architecture next_address_arch of next_address
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/pc_register.vhdl
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity pc_register
+# -- Compiling architecture pc_register_arch of pc_register
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/sign_extend.vhdl
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity sign_extend
+# -- Compiling architecture sign_extend_arch of sign_extend

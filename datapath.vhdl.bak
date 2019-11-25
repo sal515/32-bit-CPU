@@ -138,9 +138,8 @@ ARCHITECTURE datapath_arch OF datapath IS
 
     -- internal signal declarations
 
-    -- internal signals for next_address
+    -- pc signals
     SIGNAL next_pc : std_logic_vector(31 DOWNTO 0);
-    
     SIGNAL next_pc : std_logic_vector(31 DOWNTO 0);
 
     begin

@@ -17,6 +17,7 @@ BEGIN
 
     PROCESS (clock, reset, d)
       begin
+      
         IF reset = '1' THEN
             q <= (OTHERS => '0');
         ELSIF (clock = '1' AND clock'event) THEN

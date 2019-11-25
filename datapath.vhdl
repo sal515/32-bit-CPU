@@ -16,7 +16,7 @@ ENTITY datapath IS
         reg_dst : IN std_logic;
 
         -- sign extend ports
-        func : IN std_logic_vector(1 DOWNTO 0);
+        -- func : IN std_logic_vector(1 DOWNTO 0);
 
         -- regfile ports block
         reg_write : IN std_logic;
@@ -37,9 +37,13 @@ ENTITY datapath IS
 
         -- reg_in_src MUX port
         reg_in_src : IN std_logic;
-        
+
         -- control port
-        instruction_out : out std_logic_vector(31 downto 0);      
+        instruction_out : OUT std_logic_vector(31 DOWNTO 0);
+
+        rs_out : OUT std_logic_vector(31 DOWNTO 0);
+        rt_out : OUT std_logic_vector(31 DOWNTO 0);
+        pc_out : OUT std_logic_vector(31 DOWNTO 0);
     );
 END datapath;
 
@@ -80,7 +84,7 @@ ARCHITECTURE datapath_arch OF datapath IS
             mux_out : OUT std_logic_vector(31 DOWNTO 0);
         );
     END COMPONENT;
-    
+
     COMPONENT regfile
         PORT (
             din : IN std_logic_vector(31 DOWNTO 0) := (OTHERS => '0');
@@ -126,30 +130,140 @@ ARCHITECTURE datapath_arch OF datapath IS
         );
     END COMPONENT;
 
-    COMPONENT d_cache
-      PORT (
-        func : IN std_logic_vector(1 downto 0);
-        sign_extend_in : IN std_logic_vector(15 DOWNTO 0);
-        sign_extend_out : OUT std_logic_vector(31 DOWNTO 0)
-    );
+    COMPONENT sign_extend
+        PORT (
+            func : IN std_logic_vector(1 DOWNTO 0) := (OTHERS => '0');
+            sign_extend_in : IN std_logic_vector(15 DOWNTO 0) := (OTHERS => '0');
+            sign_extend_out : OUT std_logic_vector(31 DOWNTO 0)
+        );
     END COMPONENT;
 
+    -- internal component output signal declarations
 
-
-    -- internal signal declarations
+    -- internal signals for pc register
+    SIGNAL q_out : std_logic_vector(31 DOWNTO 0);
 
     -- internal signals for next_address
-    SIGNAL next_pc : std_logic_vector(31 DOWNTO 0);
-    
-    SIGNAL next_pc : std_logic_vector(31 DOWNTO 0);
+    SIGNAL next_pc_out : std_logic_vector(31 DOWNTO 0);
 
-    begin
+    -- internal signals for i_cache
+    SIGNAL instruction_cache_out : std_logic_vector(31 DOWNTO 0);
 
-    next_addr: next_address port map(
-      
-    
+    -- internal signal reg_dst mux
+    SIGNAL addr_out : std_logic_vector(4 DOWNTO 0);
+
+    -- internal signal sign_extend
+    SIGNAL sign_extend_value_out : std_logic_vector(31 DOWNTO 0);
+
+    -- internal signals register file 
+    SIGNAL rs_data_out : std_logic_vector(31 DOWNTO 0);
+    SIGNAL rt_data_out : std_logic_vector(31 DOWNTO 0);
+
+    -- rs register bits - (25 downto 21)
+    -- rt register bits - (20 downto 16)
+    -- rd register bits - (15 downto 11)
+    -- internal signal alu_src mux
+    SIGNAL alu_mux_out : std_logic_vector(31 DOWNTO 0);
+
+    -- alu internal signals
+    SIGNAL alu_out : std_logic_vector(31 DOWNTO 0);
+
+    -- d cache signals
+    SIGNAL d_cache_out : std_logic_vector(31 DOWNTO 0);
+
+    -- internal signal reg_in_src mux
+    SIGNAL d_cache_mux_out : std_logic_vector(31 DOWNTO 0);
+
+BEGIN
+
+    pc_reg : pc_register PORT MAP(
+        reset => reset,
+        clock => clk,
+        d => next_pc_out,
+        q => q_out
+    );
+
+    i_cache : i_cache PORT MAP(
+        instr_addr => q_out(4 DOWNTO 0),
+        i_cache_instr_out => instruction_cache_out
+    );
+
+    next_addr : next_address PORT MAP(
+        rt => rt_data_out,
+        rs => rs_data_out,
+        pc => q_out,
+        target_address => instruction_cache_out(25 DOWNTO 0),
+        branch_type => branch_type,
+        pc_sel => pc_sel,
+        next_pc => next_pc_out
+    );
+
+    reg_dst_mux : two_input_mux PORT MAP(
+        s => reg_dst,
+        in0 => instruction_cache_out(20 DOWNTO 16),
+        in1 => instruction_cache_out(15 DOWNTO 11),
+        mux_out => addr_out
+    );
+
+    regFile : regfile PORT MAP(
+        din => d_cache_mux_out,
+        reset => reset,
+        clk => clk,
+        write => reg_write,
+        read_a => instruction_cache_out(25 DOWNTO 21),
+        read_b => instruction_cache_out(20 DOWNTO 16),
+        write_address => addr_out
+        out_a => rs_data_out
+        out_b => rt_data_out
+    );
+
+    sign_extend : sign_extend PORT MAP(
+        func => func,
+        sign_extend_in => instruction_cache_out(15 DOWNTO 0),
+        sign_extend_out => sign_extend_value_out
+    );
+
+    alu_src_mux : two_input_mux PORT MAP(
+        s => alu_src,
+        in0 => rt_data_out,
+        in1 => sign_extend_value_out,
+        mux_out => alu_mux_out
+    );
+
+    alu_comp : alu PORT MAP(
+        x => rs_data_out,
+        y => alu_mux_out,
+        add_sub => add_sub,
+        logic_func => logic_func,
+        func => func,
+        output => alu_out,
+        overflow => overflow
+        zero => zero
+    );
+
+    dcache : d_cache PORT MAP(
+        clock => clk,
+        data_write => data_write,
+        reset => reset,
+        addr => alu_out(4 DOWNTO 0),
+        d_in => rt_data_out,
+        d_out => d_cache_out
+    );
+
+    reg_in_src_mux : two_input_mux PORT MAP(
+        s => reg_in_src,
+        in0 => alu_out,
+        in1 => d_cache_out,
+        mux_out => d_cache_mux_out
     );
 
 
-        
+
+    rs_out <= rs_data_out;
+    rs_out <= rt_data_out;
+    pc_out <= q_out;
+
+
+
+
 END datapath_arch;

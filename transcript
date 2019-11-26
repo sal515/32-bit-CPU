@@ -30,729 +30,6 @@ vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/alu.vhd
 vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/controller.vhdl
 # Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
 # -- Loading package standard
-# -- Compiling entity controller
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/controller.vhdl(5): (vcom-1136) Unknown identifier "std_logic_vector".
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/controller.vhdl(6): (vcom-1136) Unknown identifier "std_logic_vector".
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/controller.vhdl(9): (vcom-1136) Unknown identifier "std_logic".
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/controller.vhdl(15): (vcom-1136) Unknown identifier "std_logic".
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/controller.vhdl(18): (vcom-1136) Unknown identifier "std_logic".
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/controller.vhdl(21): (vcom-1136) Unknown identifier "std_logic".
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/controller.vhdl(22): (vcom-1136) Unknown identifier "std_logic_vector".
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/controller.vhdl(23): (vcom-1136) Unknown identifier "std_logic_vector".
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/controller.vhdl(29): (vcom-1136) Unknown identifier "std_logic".
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/controller.vhdl(32): (vcom-1136) Unknown identifier "std_logic".
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/controller.vhdl(35): (vcom-1136) Unknown identifier "std_logic_vector".
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/controller.vhdl(36): near ")": expecting "IDENTIFIER"
-vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_signed
-# -- Compiling entity cpu
-# -- Compiling architecture cpu_arch of cpu
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl(39): (vcom-1136) Unknown identifier "data_write".
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl(39): Bad resolution function (std_logic) for type (error).
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl(39): near ":": expecting ';' or ')'
-vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/d_cache.vhdl
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Loading package numeric_std
-# -- Compiling entity d_cache
-# -- Compiling architecture d_cache_arch of d_cache
-vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package numeric_std
-# -- Compiling entity datapath
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(36): (vcom-1136) Unknown identifier "data_write".
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(36): Bad resolution function (std_logic) for type (error).
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(36): near ":": expecting ';' or ')'
-vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/i_cache.vhdl
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Compiling entity i_cache
-# -- Compiling architecture i_cache_arch of i_cache
-vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/mux.vhdl
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Compiling entity two_input_mux
-# -- Compiling architecture two_input_mux_arch of two_input_mux
-vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/next_address.vhd
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_signed
-# -- Compiling entity next_address
-# -- Compiling architecture next_address_arch of next_address
-vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/pc_register.vhdl
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity pc_register
-# -- Compiling architecture pc_register_arch of pc_register
-vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/sign_extend.vhdl
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Compiling entity sign_extend
-# -- Compiling architecture sign_extend_arch of sign_extend
-vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package numeric_std
-# -- Compiling entity datapath
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(36): (vcom-1136) Unknown identifier "data_write".
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(36): Bad resolution function (std_logic) for type (error).
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(36): near ":": expecting ';' or ')'
-vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package numeric_std
-# -- Compiling entity datapath
-# -- Compiling architecture datapath_arch of datapath
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(85): near ")": expecting "IDENTIFIER"
-vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package numeric_std
-# -- Compiling entity datapath
-# -- Compiling architecture datapath_arch of datapath
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(186): Symbol "i_cache" has already been declared in this region.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(186): (vcom-1141) Identifier "i_cache" does not identify a component declaration.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(208): Symbol "regfile" has already been declared in this region.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(216): near "out_a": expecting ',' or ')'
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(220): Statement cannot be labeled.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(220): (vcom-1141) Identifier "sign_extend" does not identify a component declaration.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(241): near "zero": expecting ',' or ')'
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(244): Statement cannot be labeled.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(203): (vcom-1272) Length of formal "in0" is 32; length of slice name is 5.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(204): (vcom-1272) Length of formal "in1" is 32; length of slice name is 5.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(205): (vcom-1272) Length of formal "mux_out" is 32; length of actual is 5.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(269): VHDL Compiler exiting
-vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package numeric_std
-# -- Compiling entity datapath
-# -- Compiling architecture datapath_arch of datapath
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(208): Symbol "regfile" has already been declared in this region.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(216): near "out_a": expecting ',' or ')'
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(220): Statement cannot be labeled.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(220): (vcom-1141) Identifier "sign_extend" does not identify a component declaration.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(241): near "zero": expecting ',' or ')'
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(244): Statement cannot be labeled.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(203): (vcom-1272) Length of formal "in0" is 32; length of slice name is 5.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(204): (vcom-1272) Length of formal "in1" is 32; length of slice name is 5.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(205): (vcom-1272) Length of formal "mux_out" is 32; length of actual is 5.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(269): VHDL Compiler exiting
-vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package numeric_std
-# -- Compiling entity datapath
-# -- Compiling architecture datapath_arch of datapath
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(216): near "out_a": expecting ',' or ')'
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(220): Statement cannot be labeled.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(220): (vcom-1141) Identifier "sign_extend" does not identify a component declaration.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(241): near "zero": expecting ',' or ')'
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(244): Statement cannot be labeled.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(203): (vcom-1272) Length of formal "in0" is 32; length of slice name is 5.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(204): (vcom-1272) Length of formal "in1" is 32; length of slice name is 5.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(205): (vcom-1272) Length of formal "mux_out" is 32; length of actual is 5.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(269): VHDL Compiler exiting
-vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package numeric_std
-# -- Compiling entity datapath
-# -- Compiling architecture datapath_arch of datapath
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(220): Symbol "sign_extend" has already been declared in this region.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(220): (vcom-1141) Identifier "sign_extend" does not identify a component declaration.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(241): near "zero": expecting ',' or ')'
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(244): Statement cannot be labeled.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(203): (vcom-1272) Length of formal "in0" is 32; length of slice name is 5.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(204): (vcom-1272) Length of formal "in1" is 32; length of slice name is 5.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(205): (vcom-1272) Length of formal "mux_out" is 32; length of actual is 5.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(269): VHDL Compiler exiting
-vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package numeric_std
-# -- Compiling entity datapath
-# -- Compiling architecture datapath_arch of datapath
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(241): near "zero": expecting ',' or ')'
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(244): Statement cannot be labeled.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(203): (vcom-1272) Length of formal "in0" is 32; length of slice name is 5.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(204): (vcom-1272) Length of formal "in1" is 32; length of slice name is 5.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(205): (vcom-1272) Length of formal "mux_out" is 32; length of actual is 5.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(269): VHDL Compiler exiting
-vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package numeric_std
-# -- Compiling entity datapath
-# -- Compiling architecture datapath_arch of datapath
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(203): (vcom-1272) Length of formal "in0" is 32; length of slice name is 5.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(204): (vcom-1272) Length of formal "in1" is 32; length of slice name is 5.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(205): (vcom-1272) Length of formal "mux_out" is 32; length of actual is 5.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(269): VHDL Compiler exiting
-vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_signed
-# -- Compiling entity cpu
-# -- Compiling architecture cpu_arch of cpu
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl(39): (vcom-1136) Unknown identifier "data_write".
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl(39): Bad resolution function (std_logic) for type (error).
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl(39): near ":": expecting ';' or ')'
-vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_signed
-# -- Compiling entity cpu
-# -- Compiling architecture cpu_arch of cpu
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl(48): near ")": expecting "IDENTIFIER"
-vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_signed
-# -- Compiling entity cpu
-# -- Compiling architecture cpu_arch of cpu
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl(65): near ")": expecting "IDENTIFIER"
-vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_signed
-# -- Compiling entity cpu
-# -- Compiling architecture cpu_arch of cpu
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl(70): near ")": expecting ';'
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl(72): near "OUT": expecting "STRING" or "IDENTIFIER" or "<<" or '('
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl(100): (vcom-1136) Unknown identifier "instruction_out".
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl(115): (vcom-1136) Unknown identifier "zero_out".
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl(118): (vcom-1136) Unknown identifier "instruction_out".
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl(129): (vcom-1136) Unknown identifier "zero_out".
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl(129): Type error resolving prefix expression "not" as type ieee.std_logic_1164.std_logic.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl(131): Labels do not match: 'cpu_arch' and 'cpu'.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl(125): (vcom-1272) Length of expected is 4; length of actual is 32.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl(126): (vcom-1272) Length of expected is 4; length of actual is 32.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl(127): (vcom-1272) Length of expected is 4; length of actual is 32.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl(131): VHDL Compiler exiting
-vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_signed
-# -- Compiling entity cpu
-# -- Compiling architecture cpu_arch of cpu
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl(72): near "OUT": expecting "STRING" or "IDENTIFIER" or "<<" or '('
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl(100): (vcom-1136) Unknown identifier "instruction_out".
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl(118): (vcom-1136) Unknown identifier "instruction_out".
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl(131): Labels do not match: 'cpu_arch' and 'cpu'.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl(125): (vcom-1272) Length of expected is 4; length of actual is 32.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl(126): (vcom-1272) Length of expected is 4; length of actual is 32.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl(127): (vcom-1272) Length of expected is 4; length of actual is 32.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl(131): VHDL Compiler exiting
-vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_signed
-# -- Compiling entity cpu
-# -- Compiling architecture cpu_arch of cpu
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl(72): near "OUT": expecting "STRING" or "IDENTIFIER" or "<<" or '('
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl(100): (vcom-1136) Unknown identifier "instruction_out".
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl(118): (vcom-1136) Unknown identifier "instruction_out".
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl(125): (vcom-1272) Length of expected is 4; length of actual is 32.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl(126): (vcom-1272) Length of expected is 4; length of actual is 32.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl(127): (vcom-1272) Length of expected is 4; length of actual is 32.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl(131): VHDL Compiler exiting
-vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/controller.vhdl
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Compiling entity controller
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/controller.vhdl(5): (vcom-1136) Unknown identifier "std_logic_vector".
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/controller.vhdl(6): (vcom-1136) Unknown identifier "std_logic_vector".
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/controller.vhdl(9): (vcom-1136) Unknown identifier "std_logic".
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/controller.vhdl(15): (vcom-1136) Unknown identifier "std_logic".
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/controller.vhdl(18): (vcom-1136) Unknown identifier "std_logic".
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/controller.vhdl(21): (vcom-1136) Unknown identifier "std_logic".
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/controller.vhdl(22): (vcom-1136) Unknown identifier "std_logic_vector".
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/controller.vhdl(23): (vcom-1136) Unknown identifier "std_logic_vector".
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/controller.vhdl(29): (vcom-1136) Unknown identifier "std_logic".
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/controller.vhdl(32): (vcom-1136) Unknown identifier "std_logic".
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/controller.vhdl(35): (vcom-1136) Unknown identifier "std_logic_vector".
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/controller.vhdl(36): near ")": expecting "IDENTIFIER"
-vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/controller.vhdl
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Compiling entity controller
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/controller.vhdl(5): (vcom-1136) Unknown identifier "std_logic_vector".
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/controller.vhdl(6): (vcom-1136) Unknown identifier "std_logic_vector".
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/controller.vhdl(9): (vcom-1136) Unknown identifier "std_logic".
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/controller.vhdl(15): (vcom-1136) Unknown identifier "std_logic".
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/controller.vhdl(18): (vcom-1136) Unknown identifier "std_logic".
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/controller.vhdl(21): (vcom-1136) Unknown identifier "std_logic".
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/controller.vhdl(22): (vcom-1136) Unknown identifier "std_logic_vector".
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/controller.vhdl(23): (vcom-1136) Unknown identifier "std_logic_vector".
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/controller.vhdl(29): (vcom-1136) Unknown identifier "std_logic".
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/controller.vhdl(32): (vcom-1136) Unknown identifier "std_logic".
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/controller.vhdl(35): (vcom-1136) Unknown identifier "std_logic_vector".
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/controller.vhdl(37): VHDL Compiler exiting
-vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/controller.vhdl
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package numeric_std
-# -- Compiling entity controller
-# -- Compiling architecture controler of controlpath
-# ** Error: (vcom-11) Could not find work.controlpath.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/controller.vhdl(43): VHDL Compiler exiting
-vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/controller.vhdl
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity controller
-# -- Compiling architecture controler of controlpath
-# ** Error: (vcom-11) Could not find work.controlpath.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/controller.vhdl(43): VHDL Compiler exiting
-vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/controller.vhdl
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity controller
-# -- Compiling architecture controler_arch of controller
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/controller.vhdl(288): Labels do not match: 'controler_arch' and 'controler'.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/controller.vhdl(288): VHDL Compiler exiting
-vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/controller.vhdl
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity controller
-# -- Compiling architecture controller_arch of controller
-vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/controller.vhdl
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity controller
-# -- Compiling architecture controller_arch of controller
-vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_signed
-# -- Compiling entity cpu
-# -- Compiling architecture cpu_arch of cpu
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl(72): near "OUT": expecting "STRING" or "IDENTIFIER" or "<<" or '('
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl(100): (vcom-1136) Unknown identifier "instruction_out".
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl(118): (vcom-1136) Unknown identifier "instruction_out".
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl(125): (vcom-1272) Length of expected is 4; length of actual is 32.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl(126): (vcom-1272) Length of expected is 4; length of actual is 32.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl(127): (vcom-1272) Length of expected is 4; length of actual is 32.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl(131): VHDL Compiler exiting
-vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_signed
-# -- Compiling entity cpu
-# -- Compiling architecture cpu_arch of cpu
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl(54): near "branch_type": expecting "END"
-vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_signed
-# -- Compiling entity cpu
-# -- Compiling architecture cpu_arch of cpu
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl(72): near "OUT": expecting "STRING" or "IDENTIFIER" or "<<" or '('
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl(100): (vcom-1136) Unknown identifier "instruction_out".
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl(118): (vcom-1136) Unknown identifier "instruction_out".
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl(125): (vcom-1272) Length of expected is 4; length of actual is 32.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl(126): (vcom-1272) Length of expected is 4; length of actual is 32.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl(127): (vcom-1272) Length of expected is 4; length of actual is 32.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl(131): VHDL Compiler exiting
-vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_signed
-# -- Compiling entity cpu
-# -- Compiling architecture cpu_arch of cpu
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl(125): (vcom-1272) Length of expected is 4; length of actual is 32.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl(126): (vcom-1272) Length of expected is 4; length of actual is 32.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl(127): (vcom-1272) Length of expected is 4; length of actual is 32.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl(131): VHDL Compiler exiting
-vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package numeric_std
-# -- Compiling entity datapath
-# -- Compiling architecture datapath_arch of datapath
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(203): (vcom-1272) Length of formal "in0" is 32; length of slice name is 5.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(204): (vcom-1272) Length of formal "in1" is 32; length of slice name is 5.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(205): (vcom-1272) Length of formal "mux_out" is 32; length of actual is 5.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(269): VHDL Compiler exiting
-vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package numeric_std
-# -- Compiling entity datapath
-# -- Compiling architecture datapath_arch of datapath
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(203): (vcom-1272) Length of formal "in0" is 32; length of slice name is 5.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(204): (vcom-1272) Length of formal "in1" is 32; length of slice name is 5.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(205): (vcom-1272) Length of formal "mux_out" is 32; length of actual is 5.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(269): VHDL Compiler exiting
-vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package numeric_std
-# -- Compiling entity datapath
-# -- Compiling architecture datapath_arch of datapath
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(203): (vcom-1272) Length of formal "in0" is 32; length of slice name is 5.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(204): (vcom-1272) Length of formal "in1" is 32; length of slice name is 5.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(205): (vcom-1272) Length of formal "mux_out" is 32; length of actual is 5.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(269): VHDL Compiler exiting
-vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/mux_5_bit.vhdl
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Compiling entity two_input_mux_5_bit
-# -- Compiling architecture two_input_5_bit_mux_arch of two_input_mux_5_bit
-vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/mux_5_bit.vhdl
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Compiling entity two_input_mux_5_bit
-# -- Compiling architecture two_input_5_bit_mux_arch of two_input_mux_5_bit
-vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package numeric_std
-# -- Compiling entity datapath
-# -- Compiling architecture datapath_arch of datapath
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(203): (vcom-1272) Length of formal "in0" is 32; length of slice name is 5.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(204): (vcom-1272) Length of formal "in1" is 32; length of slice name is 5.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(205): (vcom-1272) Length of formal "mux_out" is 32; length of actual is 5.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl(269): VHDL Compiler exiting
-vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package numeric_std
-# -- Compiling entity datapath
-# -- Compiling architecture datapath_arch of datapath
-vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package numeric_std
-# -- Compiling entity datapath
-# -- Compiling architecture datapath_arch of datapath
-vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package numeric_std
-# -- Compiling entity datapath
-# -- Compiling architecture datapath_arch of datapath
-vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_signed
-# -- Compiling entity cpu
-# -- Compiling architecture cpu_arch of cpu
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl(125): (vcom-1272) Length of expected is 4; length of actual is 32.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl(126): (vcom-1272) Length of expected is 4; length of actual is 32.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl(127): (vcom-1272) Length of expected is 4; length of actual is 32.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl(131): VHDL Compiler exiting
-vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/controller.vhdl
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity controller
-# -- Compiling architecture controller_arch of controller
-vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/controller.vhdl
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity controller
-# -- Compiling architecture controller_arch of controller
-vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package numeric_std
-# -- Compiling entity datapath
-# -- Compiling architecture datapath_arch of datapath
-vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/i_cache.vhdl
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Compiling entity i_cache
-# -- Compiling architecture i_cache_arch of i_cache
-vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/mux.vhdl
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Compiling entity two_input_mux
-# -- Compiling architecture two_input_mux_arch of two_input_mux
-vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/mux_5_bit.vhdl
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Compiling entity two_input_mux_5_bit
-# -- Compiling architecture two_input_5_bit_mux_arch of two_input_mux_5_bit
-vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/next_address.vhd
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_signed
-# -- Compiling entity next_address
-# -- Compiling architecture next_address_arch of next_address
-vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/pc_register.vhdl
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity pc_register
-# -- Compiling architecture pc_register_arch of pc_register
-vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/sign_extend.vhdl
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Compiling entity sign_extend
-# -- Compiling architecture sign_extend_arch of sign_extend
-vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/d_cache.vhdl
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Loading package numeric_std
-# -- Compiling entity d_cache
-# -- Compiling architecture d_cache_arch of d_cache
-vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_signed
-# -- Compiling entity cpu
-# -- Compiling architecture cpu_arch of cpu
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl(125): (vcom-1272) Length of expected is 4; length of actual is 32.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl(126): (vcom-1272) Length of expected is 4; length of actual is 32.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl(127): (vcom-1272) Length of expected is 4; length of actual is 32.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl(131): VHDL Compiler exiting
-vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/controller.vhdl
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity controller
-# -- Compiling architecture controller_arch of controller
-vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/alu.vhd
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_signed
-# -- Compiling entity alu
-# -- Compiling architecture alu_architecture of alu
-vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/32-bit-register.vhd
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Loading package numeric_std
-# -- Compiling entity regfile
-# -- Compiling architecture register_file_arch of regfile
-vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_signed
-# -- Compiling entity cpu
-# -- Compiling architecture cpu_arch of cpu
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl(125): (vcom-1272) Length of expected is 4; length of actual is 32.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl(126): (vcom-1272) Length of expected is 4; length of actual is 32.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl(127): (vcom-1272) Length of expected is 4; length of actual is 32.
-# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl(131): VHDL Compiler exiting
-vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_signed
-# -- Compiling entity cpu
-# -- Compiling architecture cpu_arch of cpu
-vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_signed
-# -- Compiling entity cpu
-# -- Compiling architecture cpu_arch of cpu
-vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/d_cache.vhdl
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Loading package numeric_std
-# -- Compiling entity d_cache
-# -- Compiling architecture d_cache_arch of d_cache
-vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/controller.vhdl
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Compiling entity controller
-# -- Compiling architecture controller_arch of controller
-vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/alu.vhd
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_signed
-# -- Compiling entity alu
-# -- Compiling architecture alu_architecture of alu
-vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/32-bit-register_file___not_this____.vhd
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Compiling entity regfile
-# -- Compiling architecture register_file_arch of regfile
-vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/32-bit-register.vhd
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# -- Loading package numeric_std
-vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/32-bit-register.vhd
-# -- Compiling entity regfile
-# -- Compiling architecture register_file_arch of regfile
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/32-bit-register.vhd
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_unsigned
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package numeric_std
-# -- Loading package standard
-vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/32-bit-register.vhd
-# -- Compiling entity regfile
-# -- Loading package std_logic_1164
-# -- Compiling architecture register_file_arch of regfile
-# -- Loading package std_logic_arith
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/32-bit-register.vhd
-# -- Loading package std_logic_unsigned
-# -- Loading package standard
-# -- Loading package numeric_std
-# -- Loading package std_logic_1164
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/32-bit-register.vhd
-# -- Compiling entity regfile
-# -- Loading package std_logic_arith
-# -- Loading package standard
-# -- Compiling architecture register_file_arch of regfile
-# -- Loading package std_logic_unsigned
-# -- Loading package std_logic_1164
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/32-bit-register.vhd
-# -- Loading package numeric_std
-# -- Loading package std_logic_arith
-# -- Loading package standard
-# -- Compiling entity regfile
-# -- Loading package std_logic_unsigned
-# -- Loading package std_logic_1164
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Compiling architecture register_file_arch of regfile
-# -- Loading package numeric_std
-# -- Loading package std_logic_arith
-# -- Loading package standard
-# -- Compiling entity regfile
-# -- Loading package std_logic_unsigned
-# -- Loading package std_logic_1164
-# -- Compiling architecture register_file_arch of regfile
-# -- Loading package numeric_std
-# -- Loading package std_logic_arith
-# -- Compiling entity regfile
-# -- Loading package std_logic_unsigned
-# -- Compiling architecture register_file_arch of regfile
-# -- Loading package numeric_std
-# -- Compiling entity regfile
-# -- Compiling architecture register_file_arch of regfile
-vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/alu.vhd
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
-# -- Loading package std_logic_1164
-# -- Loading package std_logic_arith
-# -- Loading package std_logic_signed
-# -- Compiling entity alu
-# -- Compiling architecture alu_architecture of alu
-vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/controller.vhdl
-# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
-# -- Loading package standard
 # -- Loading package std_logic_1164
 # -- Compiling entity controller
 # -- Compiling architecture controller_arch of controller
@@ -826,3 +103,533 @@ vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/sign_ext
 # -- Loading package std_logic_unsigned
 # -- Compiling entity sign_extend
 # -- Compiling architecture sign_extend_arch of sign_extend
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/mux.vhdl
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity two_input_mux
+# -- Compiling architecture two_input_mux_arch of two_input_mux
+vsim -novopt -do ./cpu_tester.do cpu
+# vsim -do ./cpu_tester.do -novopt cpu 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Refreshing /nfs/home/s/sal_rahm/316/32-bit-CPU/work.cpu(cpu_arch)
+# Loading work.cpu(cpu_arch)
+# Refreshing /nfs/home/s/sal_rahm/316/32-bit-CPU/work.controller(controller_arch)
+# Loading work.controller(controller_arch)
+# Loading ieee.numeric_std(body)
+# Refreshing /nfs/home/s/sal_rahm/316/32-bit-CPU/work.datapath(datapath_arch)
+# Loading work.datapath(datapath_arch)
+# Refreshing /nfs/home/s/sal_rahm/316/32-bit-CPU/work.pc_register(pc_register_arch)
+# Loading work.pc_register(pc_register_arch)
+# Loading ieee.std_logic_unsigned(body)
+# Refreshing /nfs/home/s/sal_rahm/316/32-bit-CPU/work.i_cache(i_cache_arch)
+# Loading work.i_cache(i_cache_arch)
+# Refreshing /nfs/home/s/sal_rahm/316/32-bit-CPU/work.next_address(next_address_arch)
+# Loading work.next_address(next_address_arch)
+# Refreshing /nfs/home/s/sal_rahm/316/32-bit-CPU/work.two_input_mux_5_bit(two_input_5_bit_mux_arch)
+# Loading work.two_input_mux_5_bit(two_input_5_bit_mux_arch)
+# Refreshing /nfs/home/s/sal_rahm/316/32-bit-CPU/work.regfile(register_file_arch)
+# Loading work.regfile(register_file_arch)
+# Refreshing /nfs/home/s/sal_rahm/316/32-bit-CPU/work.sign_extend(sign_extend_arch)
+# Loading work.sign_extend(sign_extend_arch)
+# Refreshing /nfs/home/s/sal_rahm/316/32-bit-CPU/work.two_input_mux(two_input_mux_arch)
+# Loading work.two_input_mux(two_input_mux_arch)
+# Refreshing /nfs/home/s/sal_rahm/316/32-bit-CPU/work.alu(alu_architecture)
+# Loading work.alu(alu_architecture)
+# Refreshing /nfs/home/s/sal_rahm/316/32-bit-CPU/work.d_cache(d_cache_arch)
+# Loading work.d_cache(d_cache_arch)
+# ** Warning: (vsim-8683) Uninitialized out port /cpu/dp/instruction_out(31 downto 0) has no driver.
+# This port will contribute value (UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu/dp/rt_out(31 downto 4) has no driver.
+# This port will contribute value (UUUUUUUUUUUUUUUUUUUUUUUUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu/dp/rt_out(3 downto 0) has no driver.
+# This port will contribute value (UUUU) to the signal network.
+# do ./cpu_tester.do 
+# ** Warning: (vsim-8683) Uninitialized out port /cpu/dp/instruction_out(31 downto 0) has no driver.
+# This port will contribute value (UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu/dp/rt_out(31 downto 4) has no driver.
+# This port will contribute value (UUUUUUUUUUUUUUUUUUUUUUUUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu/dp/rt_out(3 downto 0) has no driver.
+# This port will contribute value (UUUU) to the signal network.
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu/dp/dcache
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 0  Instance: /cpu/dp/dcache
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu/dp/rf
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 0  Instance: /cpu/dp/rf
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu/dp/rf
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 0  Instance: /cpu/dp/rf
+vsim -novopt -do ./cpu_tester.do cpu
+# vsim -do ./cpu_tester.do -novopt cpu 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading work.cpu(cpu_arch)
+# Loading work.controller(controller_arch)
+# Loading ieee.numeric_std(body)
+# Loading work.datapath(datapath_arch)
+# Loading work.pc_register(pc_register_arch)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.i_cache(i_cache_arch)
+# Loading work.next_address(next_address_arch)
+# Loading work.two_input_mux_5_bit(two_input_5_bit_mux_arch)
+# Loading work.regfile(register_file_arch)
+# Loading work.sign_extend(sign_extend_arch)
+# Loading work.two_input_mux(two_input_mux_arch)
+# Loading work.alu(alu_architecture)
+# Loading work.d_cache(d_cache_arch)
+# ** Warning: (vsim-8683) Uninitialized out port /cpu/dp/instruction_out(31 downto 0) has no driver.
+# This port will contribute value (UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu/dp/rt_out(31 downto 4) has no driver.
+# This port will contribute value (UUUUUUUUUUUUUUUUUUUUUUUUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu/dp/rt_out(3 downto 0) has no driver.
+# This port will contribute value (UUUU) to the signal network.
+# do ./cpu_tester.do 
+# ** Warning: (vsim-8683) Uninitialized out port /cpu/dp/instruction_out(31 downto 0) has no driver.
+# This port will contribute value (UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu/dp/rt_out(31 downto 4) has no driver.
+# This port will contribute value (UUUUUUUUUUUUUUUUUUUUUUUUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu/dp/rt_out(3 downto 0) has no driver.
+# This port will contribute value (UUUU) to the signal network.
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu/dp/dcache
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 0  Instance: /cpu/dp/dcache
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu/dp/rf
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 0  Instance: /cpu/dp/rf
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu/dp/rf
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 0  Instance: /cpu/dp/rf
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 2  Instance: /cpu/dp/dcache
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 2  Instance: /cpu/dp/dcache
+# A time value could not be extracted from the current line
+# A time value could not be extracted from the current line
+vsim work.cpu(cpu_arch)
+# vsim work.cpu(cpu_arch) 
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading work.cpu(cpu_arch)#1
+# Loading ieee.numeric_std(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.datapath(datapath_arch)#1
+# ** Warning: (vsim-8683) Uninitialized out port /cpu/dp/instruction_out(31 downto 0) has no driver.
+# This port will contribute value (UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu/dp/rt_out(31 downto 4) has no driver.
+# This port will contribute value (UUUUUUUUUUUUUUUUUUUUUUUUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu/dp/rt_out(3 downto 0) has no driver.
+# This port will contribute value (UUUU) to the signal network.
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_signed
+# -- Compiling entity cpu
+# -- Compiling architecture cpu_arch of cpu
+# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl(43): near "'": syntax error
+vsim -novopt -do ./cpu_tester.do cpu
+# vsim -do ./cpu_tester.do -novopt cpu 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading work.cpu(cpu_arch)
+# Loading work.controller(controller_arch)
+# Loading ieee.numeric_std(body)
+# Loading work.datapath(datapath_arch)
+# Loading work.pc_register(pc_register_arch)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.i_cache(i_cache_arch)
+# Loading work.next_address(next_address_arch)
+# Loading work.two_input_mux_5_bit(two_input_5_bit_mux_arch)
+# Loading work.regfile(register_file_arch)
+# Loading work.sign_extend(sign_extend_arch)
+# Loading work.two_input_mux(two_input_mux_arch)
+# Loading work.alu(alu_architecture)
+# Loading work.d_cache(d_cache_arch)
+# ** Warning: (vsim-8683) Uninitialized out port /cpu/dp/instruction_out(31 downto 0) has no driver.
+# This port will contribute value (UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu/dp/rt_out(31 downto 4) has no driver.
+# This port will contribute value (UUUUUUUUUUUUUUUUUUUUUUUUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu/dp/rt_out(3 downto 0) has no driver.
+# This port will contribute value (UUUU) to the signal network.
+# do ./cpu_tester.do 
+# ** Warning: (vsim-8683) Uninitialized out port /cpu/dp/instruction_out(31 downto 0) has no driver.
+# This port will contribute value (UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu/dp/rt_out(31 downto 4) has no driver.
+# This port will contribute value (UUUUUUUUUUUUUUUUUUUUUUUUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu/dp/rt_out(3 downto 0) has no driver.
+# This port will contribute value (UUUU) to the signal network.
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu/dp/dcache
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 0  Instance: /cpu/dp/dcache
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu/dp/rf
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 0  Instance: /cpu/dp/rf
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu/dp/rf
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 0  Instance: /cpu/dp/rf
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 2  Instance: /cpu/dp/dcache
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 2  Instance: /cpu/dp/dcache
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_signed
+# -- Compiling entity cpu
+# -- Compiling architecture cpu_arch of cpu
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_signed
+# -- Compiling entity cpu
+# -- Compiling architecture cpu_arch of cpu
+# ** Error: /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl(53): near "'": syntax error
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_signed
+# -- Compiling entity cpu
+# -- Compiling architecture cpu_arch of cpu
+vsim -novopt -do ./cpu_tester.do cpu
+# vsim -do ./cpu_tester.do -novopt cpu 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Refreshing /nfs/home/s/sal_rahm/316/32-bit-CPU/work.cpu(cpu_arch)
+# Loading work.cpu(cpu_arch)
+# Loading work.controller(controller_arch)
+# Loading ieee.numeric_std(body)
+# Loading work.datapath(datapath_arch)
+# Loading work.pc_register(pc_register_arch)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.i_cache(i_cache_arch)
+# Loading work.next_address(next_address_arch)
+# Loading work.two_input_mux_5_bit(two_input_5_bit_mux_arch)
+# Loading work.regfile(register_file_arch)
+# Loading work.sign_extend(sign_extend_arch)
+# Loading work.two_input_mux(two_input_mux_arch)
+# Loading work.alu(alu_architecture)
+# Loading work.d_cache(d_cache_arch)
+# ** Warning: (vsim-8683) Uninitialized out port /cpu/dp/instruction_out(31 downto 0) has no driver.
+# This port will contribute value (UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu/dp/rt_out(31 downto 4) has no driver.
+# This port will contribute value (UUUUUUUUUUUUUUUUUUUUUUUUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu/dp/rt_out(3 downto 0) has no driver.
+# This port will contribute value (UUUU) to the signal network.
+# do ./cpu_tester.do 
+# ** Warning: (vsim-8683) Uninitialized out port /cpu/dp/instruction_out(31 downto 0) has no driver.
+# This port will contribute value (UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu/dp/rt_out(31 downto 4) has no driver.
+# This port will contribute value (UUUUUUUUUUUUUUUUUUUUUUUUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu/dp/rt_out(3 downto 0) has no driver.
+# This port will contribute value (UUUU) to the signal network.
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu/dp/dcache
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 0  Instance: /cpu/dp/dcache
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu/dp/rf
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 0  Instance: /cpu/dp/rf
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu/dp/rf
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 0  Instance: /cpu/dp/rf
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 2  Instance: /cpu/dp/dcache
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 2  Instance: /cpu/dp/dcache
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_signed
+# -- Compiling entity cpu
+# -- Compiling architecture cpu_arch of cpu
+vsim -novopt -do ./cpu_tester.do cpu
+# vsim -do ./cpu_tester.do -novopt cpu 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Refreshing /nfs/home/s/sal_rahm/316/32-bit-CPU/work.cpu(cpu_arch)
+# Loading work.cpu(cpu_arch)
+# Loading work.controller(controller_arch)
+# Loading ieee.numeric_std(body)
+# Loading work.datapath(datapath_arch)
+# Loading work.pc_register(pc_register_arch)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.i_cache(i_cache_arch)
+# Loading work.next_address(next_address_arch)
+# Loading work.two_input_mux_5_bit(two_input_5_bit_mux_arch)
+# Loading work.regfile(register_file_arch)
+# Loading work.sign_extend(sign_extend_arch)
+# Loading work.two_input_mux(two_input_mux_arch)
+# Loading work.alu(alu_architecture)
+# Loading work.d_cache(d_cache_arch)
+# ** Warning: (vsim-8683) Uninitialized out port /cpu/dp/instruction_out(31 downto 0) has no driver.
+# This port will contribute value (UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu/dp/rt_out(31 downto 4) has no driver.
+# This port will contribute value (UUUUUUUUUUUUUUUUUUUUUUUUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu/dp/rt_out(3 downto 0) has no driver.
+# This port will contribute value (UUUU) to the signal network.
+# do ./cpu_tester.do 
+# ** Warning: (vsim-8683) Uninitialized out port /cpu/dp/instruction_out(31 downto 0) has no driver.
+# This port will contribute value (UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu/dp/rt_out(31 downto 4) has no driver.
+# This port will contribute value (UUUUUUUUUUUUUUUUUUUUUUUUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu/dp/rt_out(3 downto 0) has no driver.
+# This port will contribute value (UUUU) to the signal network.
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu/dp/dcache
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 0  Instance: /cpu/dp/dcache
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu/dp/rf
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 0  Instance: /cpu/dp/rf
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu/dp/rf
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 0  Instance: /cpu/dp/rf
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 2  Instance: /cpu/dp/dcache
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 2  Instance: /cpu/dp/dcache
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Compiling entity datapath
+# -- Compiling architecture datapath_arch of datapath
+vsim -novopt -do ./cpu_tester.do cpu
+# vsim -do ./cpu_tester.do -novopt cpu 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading work.cpu(cpu_arch)
+# Loading work.controller(controller_arch)
+# Loading ieee.numeric_std(body)
+# Refreshing /nfs/home/s/sal_rahm/316/32-bit-CPU/work.datapath(datapath_arch)
+# Loading work.datapath(datapath_arch)
+# Loading work.pc_register(pc_register_arch)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.i_cache(i_cache_arch)
+# Loading work.next_address(next_address_arch)
+# Loading work.two_input_mux_5_bit(two_input_5_bit_mux_arch)
+# Loading work.regfile(register_file_arch)
+# Loading work.sign_extend(sign_extend_arch)
+# Loading work.two_input_mux(two_input_mux_arch)
+# Loading work.alu(alu_architecture)
+# Loading work.d_cache(d_cache_arch)
+# ** Warning: (vsim-8683) Uninitialized out port /cpu/dp/rt_out(31 downto 4) has no driver.
+# This port will contribute value (UUUUUUUUUUUUUUUUUUUUUUUUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu/dp/rt_out(3 downto 0) has no driver.
+# This port will contribute value (UUUU) to the signal network.
+# do ./cpu_tester.do 
+# ** Warning: (vsim-8683) Uninitialized out port /cpu/dp/rt_out(31 downto 4) has no driver.
+# This port will contribute value (UUUUUUUUUUUUUUUUUUUUUUUUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /cpu/dp/rt_out(3 downto 0) has no driver.
+# This port will contribute value (UUUU) to the signal network.
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu/dp/dcache
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 0  Instance: /cpu/dp/dcache
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu/dp/rf
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 0  Instance: /cpu/dp/rf
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu/dp/rf
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 0  Instance: /cpu/dp/rf
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 2  Instance: /cpu/dp/dcache
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 2  Instance: /cpu/dp/dcache
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 6  Instance: /cpu/dp/next_addr
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 6  Instance: /cpu/dp/next_addr
+# A time value could not be extracted from the current line
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Compiling entity datapath
+# -- Compiling architecture datapath_arch of datapath
+vsim -novopt -do ./cpu_tester.do cpu
+# vsim -do ./cpu_tester.do -novopt cpu 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading work.cpu(cpu_arch)
+# Loading work.controller(controller_arch)
+# Loading ieee.numeric_std(body)
+# Refreshing /nfs/home/s/sal_rahm/316/32-bit-CPU/work.datapath(datapath_arch)
+# Loading work.datapath(datapath_arch)
+# Loading work.pc_register(pc_register_arch)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.i_cache(i_cache_arch)
+# Loading work.next_address(next_address_arch)
+# Loading work.two_input_mux_5_bit(two_input_5_bit_mux_arch)
+# Loading work.regfile(register_file_arch)
+# Loading work.sign_extend(sign_extend_arch)
+# Loading work.two_input_mux(two_input_mux_arch)
+# Loading work.alu(alu_architecture)
+# Loading work.d_cache(d_cache_arch)
+# do ./cpu_tester.do 
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu/dp/dcache
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 0  Instance: /cpu/dp/dcache
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu/dp/rf
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 0  Instance: /cpu/dp/rf
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu/dp/rf
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 0  Instance: /cpu/dp/rf
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 2  Instance: /cpu/dp/dcache
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 2  Instance: /cpu/dp/dcache
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 6  Instance: /cpu/dp/next_addr
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 6  Instance: /cpu/dp/next_addr
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/cpu.vhdl
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_signed
+# -- Compiling entity cpu
+# -- Compiling architecture cpu_arch of cpu
+vsim -novopt -do ./cpu_tester.do cpu
+# vsim -do ./cpu_tester.do -novopt cpu 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Refreshing /nfs/home/s/sal_rahm/316/32-bit-CPU/work.cpu(cpu_arch)
+# Loading work.cpu(cpu_arch)
+# Loading work.controller(controller_arch)
+# Loading ieee.numeric_std(body)
+# Loading work.datapath(datapath_arch)
+# Loading work.pc_register(pc_register_arch)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.i_cache(i_cache_arch)
+# Loading work.next_address(next_address_arch)
+# Loading work.two_input_mux_5_bit(two_input_5_bit_mux_arch)
+# Loading work.regfile(register_file_arch)
+# Loading work.sign_extend(sign_extend_arch)
+# Loading work.two_input_mux(two_input_mux_arch)
+# Loading work.alu(alu_architecture)
+# Loading work.d_cache(d_cache_arch)
+# do ./cpu_tester.do 
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu/dp/dcache
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 0  Instance: /cpu/dp/dcache
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu/dp/rf
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 0  Instance: /cpu/dp/rf
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu/dp/rf
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 0  Instance: /cpu/dp/rf
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 2  Instance: /cpu/dp/dcache
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 2  Instance: /cpu/dp/dcache
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 6  Instance: /cpu/dp/next_addr
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 6  Instance: /cpu/dp/next_addr
+vcom -reportprogress 300 -work work /nfs/home/s/sal_rahm/316/32-bit-CPU/datapath.vhdl
+# Model Technology ModelSim SE-64 vcom 6.6g Compiler 2012.05 May 23 2012
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Compiling entity datapath
+# -- Compiling architecture datapath_arch of datapath
+vsim -novopt -do ./cpu_tester.do cpu
+# vsim -do ./cpu_tester.do -novopt cpu 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading work.cpu(cpu_arch)
+# Loading work.controller(controller_arch)
+# Loading ieee.numeric_std(body)
+# Refreshing /nfs/home/s/sal_rahm/316/32-bit-CPU/work.datapath(datapath_arch)
+# Loading work.datapath(datapath_arch)
+# Loading work.pc_register(pc_register_arch)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.i_cache(i_cache_arch)
+# Loading work.next_address(next_address_arch)
+# Loading work.two_input_mux_5_bit(two_input_5_bit_mux_arch)
+# Loading work.regfile(register_file_arch)
+# Loading work.sign_extend(sign_extend_arch)
+# Loading work.two_input_mux(two_input_mux_arch)
+# Loading work.alu(alu_architecture)
+# Loading work.d_cache(d_cache_arch)
+# do ./cpu_tester.do 
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu/dp/dcache
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 0  Instance: /cpu/dp/dcache
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu/dp/rf
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 0  Instance: /cpu/dp/rf
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu/dp/rf
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 0  Instance: /cpu/dp/rf
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 2  Instance: /cpu/dp/dcache
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 2  Instance: /cpu/dp/dcache
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 6  Instance: /cpu/dp/next_addr
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 6  Instance: /cpu/dp/next_addr

@@ -40,26 +40,26 @@ ARCHITECTURE cpu_arch OF cpu IS
 
             reg_in_src : IN std_logic := '0';
 
-            instruction_out : OUT std_logic_vector(31 DOWNTO 0);
+            instruction_out : OUT std_logic_vector(31 DOWNTO 0) := "00000000000000000000000000000000";
 
-            rs_out : OUT std_logic_vector(31 DOWNTO 0);
-            rt_out : OUT std_logic_vector(31 DOWNTO 0);
-            pc_out : OUT std_logic_vector(31 DOWNTO 0)
+            rs_out : OUT std_logic_vector(31 DOWNTO 0):= "00000000000000000000000000000000";
+            rt_out : OUT std_logic_vector(31 DOWNTO 0):= "00000000000000000000000000000000";
+            pc_out : OUT std_logic_vector(31 DOWNTO 0):= "00000000000000000000000000000000"
         );
     END COMPONENT;
 
     COMPONENT controller
         PORT (
-            pc_sel : OUT std_logic_vector(1 DOWNTO 0);
-            branch_type : OUT std_logic_vector(1 DOWNTO 0);
-            reg_dst : OUT std_logic ;
-            reg_write : OUT std_logic;
-            alu_src : OUT std_logic ;
-            add_sub : OUT std_logic ;
-            logic_func : OUT std_logic_vector(1 DOWNTO 0);
-            func : OUT std_logic_vector(1 DOWNTO 0);
-            data_write : OUT std_logic;
-            reg_in_src : OUT std_logic;
+            pc_sel : OUT std_logic_vector(1 DOWNTO 0) :="00";
+            branch_type : OUT std_logic_vector(1 DOWNTO 0) :="00";
+            reg_dst : OUT std_logic :='0';
+            reg_write : OUT std_logic :='0';
+            alu_src : OUT std_logic :='0';
+            add_sub : OUT std_logic :='0' ;
+            logic_func : OUT std_logic_vector(1 DOWNTO 0):="00";
+            func : OUT std_logic_vector(1 DOWNTO 0) :="00";
+            data_write : OUT std_logic :='0';
+            reg_in_src : OUT std_logic :='0';
             instruction_in : IN std_logic_vector(31 DOWNTO 0) := (OTHERS => '0')
 
         );
@@ -121,11 +121,17 @@ BEGIN
         pc_out => pc_output
     );
 
+rs_out <=  rs_output(3 downto 0);
+rt_out <=  rt_output(3 downto 0);
+pc_out <=  pc_output(3 downto 0);
+overflow <=  overflow_out;
+zero <=  zero_out;
 
-    rs_out <= not rs_output(3 downto 0);
-    rt_out <= not rt_output(3 downto 0);
-    pc_out <= not pc_output(3 downto 0);
-    overflow <= not overflow_out;
-    zero <= not zero_out;
+
+--    rs_out <= not rs_output(3 downto 0);
+ --   rt_out <= not rt_output(3 downto 0);
+   -- pc_out <= not pc_output(3 downto 0);
+    --overflow <= not overflow_out;
+    --zero <= not zero_out;
 
 END cpu_arch;

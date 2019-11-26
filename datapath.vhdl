@@ -264,18 +264,18 @@ BEGIN
 
     reg_in_src_mux : two_input_mux PORT MAP(
         s => reg_in_src,
-        in0 => alu_out,
-        in1 => d_cache_out,
+        in0 => d_cache_out,
+        in1 => alu_out,
         mux_out => d_cache_mux_out
     );
 
 
 
     rs_out <= rs_data_out;
-    rs_out <= rt_data_out;
+    rt_out <= rt_data_out;
     pc_out <= q_out;
 
-
+    instruction_out <= instruction_cache_out;
 
 
 END datapath_arch;

@@ -16,11 +16,13 @@ ARCHITECTURE pc_register_arch OF pc_register IS
 BEGIN
 
     PROCESS (clock, reset, d)
+      begin
+      
         IF reset = '1' THEN
             q <= (OTHERS => '0');
         ELSIF (clock = '1' AND clock'event) THEN
             q <= d;
         END IF;
-    END proces;
+    END PROCESS;
 
 END pc_register_arch;

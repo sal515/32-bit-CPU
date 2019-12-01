@@ -26,7 +26,7 @@ variable sign_extend_out_var: std_logic_vector(sign_extend_out'length-1 downto s
         
         WHEN "01" =>
         -- if sign_extend_in(sign_extend_in'length-1) = '1' then
-        if sign_extend_in(15) = '1' then
+        if sign_extend_in(sign_extend_in'length-1) = '1' then
 
           sign_extend_out_var := (others => '1');
           sign_extend_out_var(sign_extend_in'length-1 downto sign_extend_in'right) := sign_extend_in;

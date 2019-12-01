@@ -19,9 +19,9 @@ process(s, in0, in1)
   begin
 
     CASE s IS
-        WHEN "0" =>
+        WHEN '0' =>
             mux_out <= in0;
-        WHEN "1" =>
+        WHEN '1' =>
             mux_out <= in1;
         WHEN OTHERS =>
             mux_out <= (others=>'0');

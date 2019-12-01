@@ -121,11 +121,17 @@ BEGIN
         pc_out => pc_output
     );
 
+rs_out <=  rs_output(3 downto 0);
+rt_out <=  rt_output(3 downto 0);
+pc_out <=  pc_output(3 downto 0);
+overflow <=  overflow_out;
+zero <=  zero_out;
 
-    rs_out <= not rs_output(3 downto 0);
-    rt_out <= not rt_output(3 downto 0);
-    pc_out <= not pc_output(3 downto 0);
-    overflow <= not overflow_out;
-    zero <= not zero_out;
+
+--    rs_out <= not rs_output(3 downto 0);
+ --   rt_out <= not rt_output(3 downto 0);
+   -- pc_out <= not pc_output(3 downto 0);
+    --overflow <= not overflow_out;
+    --zero <= not zero_out;
 
 END cpu_arch;

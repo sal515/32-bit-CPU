@@ -40,7 +40,7 @@ ENTITY controller IS
     );
 END controller;
 
-ARCHITECTURE controler_arch OF controller IS
+ARCHITECTURE controller_arch OF controller IS
     SIGNAL op_code : std_logic_vector(5 DOWNTO 0);
     SIGNAL func_code : std_logic_vector(5 DOWNTO 0);
 BEGIN
@@ -285,4 +285,4 @@ BEGIN
 
     END PROCESS;
 
-END controler;
+END controller_arch;

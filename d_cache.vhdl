@@ -1,3 +1,6 @@
+-- salman rahman
+-- 27853815
+
 LIBRARY IEEE;
 USE IEEE.std_logic_1164.ALL;
 USE IEEE.std_logic_unsigned.ALL;

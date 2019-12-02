@@ -1,0 +1,71 @@
+iMPACT Version: 10.1
+
+iMPACT log file Started on Sat Nov 30 22:44:46 2019
+
+// *** BATCH CMD : setMode -acecf
+// *** BATCH CMD : setAttribute -configdevice -attr size -value "134217728"
+// *** BATCH CMD : setMode -acecf
+// *** BATCH CMD : addConfigDevice -size 134217728 -name "Untitled" -path"/nfs/home/s/sal_rahm/316/impact/lab5/"
+// *** BATCH CMD : addCollection -name "Untitled"
+// *** BATCH CMD : addDesign -version 0 -name "rev0"
+// *** BATCH CMD : setMode -acecf
+// *** BATCH CMD : addDeviceChain -index 0
+// *** BATCH CMD : setAttribute -configdevice -attr compressed -value "FALSE"
+// *** BATCH CMD : setAttribute -configdevice -attr compressed -value "FALSE"
+// *** BATCH CMD : setMode -acecf
+// *** BATCH CMD : setCurrentCollection -collection "Untitled"
+// *** BATCH CMD : setCurrentDesign -version 0
+// *** BATCH CMD : deleteDesign -version 0
+// *** BATCH CMD : setCurrentDesign -version -1
+// *** BATCH CMD : deleteCollection -name "Untitled"
+// *** BATCH CMD : setAttribute -configdevice -attr size -value "128000000"
+// *** BATCH CMD : setMode -acecf
+// *** BATCH CMD : addConfigDevice -size 128000000 -name "XCACECF" -path"/nfs/home/s/sal_rahm/316/impact/lab5/Untitled"
+// *** BATCH CMD : addCollection -name "Untitled"
+// *** BATCH CMD : setMode -acecf
+// *** BATCH CMD : setAttribute -configdevice -attr size -value "134217728"
+// *** BATCH CMD : setAttribute -configdevice -attr reserveSize -value "0"
+// *** BATCH CMD : setAttribute -configdevice -attr name -value "XCCACE128-I"
+// *** BATCH CMD : addDesign -version 0 -name "rev0"
+// *** BATCH CMD : setMode -acecf
+// *** BATCH CMD : addDeviceChain -index 0
+------------------ GUI: Wizard Data Report  -------------------------
+      File Mode : ACECF
+      Collection Name : Untitled
+      Collection Locatnion : /nfs/home/s/sal_rahm/316/impact/lab5/
+      Collection Size : 0 Mbits
+      Reserved Space : 0 Mbits
+      Number of Design : 1
+      Config Address and Design Name list : 
+Version: 0   DesignName: rev0
+------------------------ END of Report ------------------------------
+V2Pro Part: xc2vp30 w/2 ppc
+// *** BATCH CMD : setMode -acecf
+1. Initializing V2Pro File...
+// *** BATCH CMD : addDevice -p 1 -file"/nfs/home/s/sal_rahm/316/ise/lab5/lab5/cpu.bit"
+'1': Loading file '/nfs/home/s/sal_rahm/316/ise/lab5/lab5/cpu.bit' ...
+done.
+INFO:iMPACT:1777 - 
+   Reading   /nfs/sw_cmc/x86_64.EL7/tools/xilinx_10.1/ISE/virtex2p/data/xc2vp30.bsd...
+INFO:iMPACT:501 - '1': Added Device xc2vp30 successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+Add one device.// *** BATCH CMD : setAttribute -configdevice -attr path -value"/nfs/home/s/sal_rahm/316/impact/lab5"
+// *** BATCH CMD : generate -active Untitled
+INFO:iMPACT:794 - Creating SVF File   /nfs/home/s/sal_rahm/316/impact/lab5/Untitled/rev0/rev0.svf...
+
+
+'1': Programming device...
+PROGRESS_START - Starting Operation.
+ Match_cycle = NoWait.
+Match cycle: NoWait
+done.
+INFO:iMPACT:579 - '1': Completed downloading bit file to device.
+ Match_cycle = NoWait.
+Match cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      1 sec.
+Creating Ace File /nfs/home/s/sal_rahm/316/impact/lab5/Untitled/rev0/rev0.ace...
+Copy active xilinx.sys /nfs/home/s/sal_rahm/316/impact/lab5/Untitled/xilinx.systo root.

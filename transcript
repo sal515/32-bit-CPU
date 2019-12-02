@@ -1,0 +1,53 @@
+# //  ModelSim SE-64 6.6g May 23 2012 Linux 3.10.0-1062.4.3.el7.x86_64
+# //
+# //  Copyright 1991-2012 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+# 
+#  
+vsim -novopt -do ./cpu_tester.do cpu
+# vsim -do ./cpu_tester.do -novopt cpu 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading work.cpu(cpu_arch)
+# Loading work.controller(controller_arch)
+# Loading ieee.numeric_std(body)
+# Loading work.datapath(datapath_arch)
+# Loading work.pc_register(pc_register_arch)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.i_cache(i_cache_arch)
+# Loading work.next_address(next_address_arch)
+# Loading work.two_input_mux_5_bit(two_input_5_bit_mux_arch)
+# Loading work.regfile(register_file_arch)
+# Loading work.sign_extend(sign_extend_arch)
+# Loading work.two_input_mux(two_input_mux_arch)
+# Loading work.alu(alu_architecture)
+# Loading work.d_cache(d_cache_arch)
+# do ./cpu_tester.do 
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu/dp/dcache
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 0  Instance: /cpu/dp/dcache
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu/dp/rf
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 0  Instance: /cpu/dp/rf
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 0  Instance: /cpu/dp/rf
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 0  Instance: /cpu/dp/rf
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 2  Instance: /cpu/dp/dcache
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ns  Iteration: 2  Instance: /cpu/dp/dcache
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 6  Instance: /cpu/dp/next_addr
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ns  Iteration: 6  Instance: /cpu/dp/next_addr

@@ -1,0 +1,16 @@
+# Info: [9566]: Logging session transcript to file /nfs/home/s/sal_rahm/316/32-bit-CPU/precision.log
+//  Precision RTL Synthesis  64-bit 2016.1.0.15 (Production Release) Wed Jun  8 09:35:56 PDT 2016
+//  
+//  Copyright (c) Mentor Graphics Corporation, 1996-2016, All Rights Reserved.
+//             Portions copyright 1991-2008 Compuware Corporation
+//                       UNPUBLISHED, LICENSED SOFTWARE.
+//            CONFIDENTIAL AND PROPRIETARY INFORMATION WHICH IS THE
+//          PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+//  
+//  Running on Linux sal_rahm@grace.encs.concordia.ca #1 SMP Thu Nov 14 10:04:03 CST 2019 3.10.0-1062.4.3.el7.x86_64 x86_64
+//  
+//  Start time Thu Nov 28 14:27:01 2019
+# -------------------------------------------------
+# Info: [9566]: Logging session transcript to file /nfs/home/s/sal_rahm/316/32-bit-CPU/precision.log
+# COMMAND: exit -force
+exit -force

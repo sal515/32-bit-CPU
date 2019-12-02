@@ -1,0 +1,43 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/s/sal_rahm/316/32-bit-CPU
+T_opt
+Z1 VcYIDOQk>>A1RoBfeMd]za3
+Z2 04 3 16 work alu alu_architecture 1
+Z3 =1-308d996205c8-5db0e47f-dd330-2144
+Z4 o-quiet -auto_acc_if_foreign -work work
+Z5 n@_opt
+Z6 OL;O;6.6g;45
+Z7 d/home/s/sal_rahm/316/32-bit-CPU
+Ealu
+Z8 w1570845354
+Z9 DPx17 __model_tech/ieee 15 std_logic_arith 0 22 GJbAT?7@hRQU9IQ702DT]2
+Z10 DPx17 __model_tech/ieee 16 std_logic_signed 0 22 <9<Kcl:S52:oW`F]FQhb20
+Z11 DPx17 __model_tech/ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
+32
+Z12 d/nfs/home/s/sal_rahm/316/32-bit-CPU
+Z13 8/nfs/home/s/sal_rahm/316/32-bit-CPU/alu.vhd
+Z14 F/nfs/home/s/sal_rahm/316/32-bit-CPU/alu.vhd
+l0
+L9
+Z15 V5]k9`4<IJ<kmlIG3KYo561
+Z16 OL;C;6.6g;45
+Z17 tExplicit 1
+Z18 !s100 iEjW@=N0EVY5:LbMUBPL;3
+Aalu_architecture
+R9
+R10
+R11
+DEx40 /nfs/home/s/sal_rahm/316/32-bit-CPU/work 3 alu 0 22 5]k9`4<IJ<kmlIG3KYo561
+32
+Mx3 17 __model_tech/ieee 14 std_logic_1164
+Mx2 17 __model_tech/ieee 16 std_logic_signed
+Mx1 17 __model_tech/ieee 15 std_logic_arith
+l38
+L31
+Z19 VOcG7P5N1?zgmk7o8Q6hf;2
+R16
+R17
+Z20 !s100 ZnW2zfCABPg:LPS3GEg@]3
